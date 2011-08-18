@@ -1,0 +1,11 @@
+byobu
+exim4
+git
+libjs-jquery
+lighttpd
+python-coverage
+python-django
+python-flup
+python-nose
+spawn-fcgi
+sqlite3
