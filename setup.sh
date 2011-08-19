@@ -39,6 +39,9 @@ SERVICES="          \
 "
 
 for SERVICE in ${SERVICES}; do
+    if [ ! -x /etc/init.d/"${SERVICE}" ]; then
+        continue
+    fi
     sudo service "${SERVICE}" stop
     sudo update-rc.d -f "${SERVICE}" remove
 done
