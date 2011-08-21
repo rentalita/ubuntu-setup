@@ -22,6 +22,7 @@ nodejs
 pep8
 pylint
 python-django-doc
+python-pip
 rails
 rails-doc
 ruby-elisp
