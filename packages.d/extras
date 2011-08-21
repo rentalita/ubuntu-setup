@@ -1,5 +1,6 @@
 chromium-browser
 chromium-codecs-ffmpeg-extra
+clojure
 compizconfig-settings-manager
 ecryptfs-utils
 emacs
@@ -9,6 +10,7 @@ git-doc
 gitk
 google-musicmanager
 google-talkplugin
+leiningen
 libio-socket-ssl-perl
 libnotify-bin
 lighttpd-doc
