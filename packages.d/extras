@@ -1,6 +1,6 @@
 chromium-browser
 chromium-codecs-ffmpeg-extra
-clojure
+clojure1.2
 compizconfig-settings-manager
 ecryptfs-utils
 emacs
