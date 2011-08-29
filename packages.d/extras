@@ -13,6 +13,7 @@ google-musicmanager
 google-talkplugin
 graphviz
 leiningen
+libdvdcss2
 libio-socket-ssl-perl
 libnotify-bin
 lighttpd-doc
@@ -22,6 +23,7 @@ nautilus-dropbox
 nginx-doc
 nginx-light
 nodejs
+non-free-codecs
 ntop
 pep8
 pylint
