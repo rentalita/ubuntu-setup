@@ -18,6 +18,8 @@ fi
 
 tar -C ubuntu -cf - $(cd ubuntu; find .) | $(sudo tar -C / -xf -)
 
+sudo chown -R root:root /etc/apt
+
 KEYS="              \
     7FAC5991        \
     5044912E        \
