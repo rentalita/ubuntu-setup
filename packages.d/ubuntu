@@ -7,5 +7,7 @@ python-coverage
 python-django
 python-flup
 python-nose
+python-setuptools
 spawn-fcgi
 sqlite3
+ssl-cert
