@@ -7,6 +7,7 @@ python-coverage
 python-django
 python-flup
 python-nose
+python-pip
 python-setuptools
 spawn-fcgi
 sqlite3
