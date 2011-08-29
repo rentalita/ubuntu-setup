@@ -10,6 +10,7 @@ git-doc
 gitk
 google-musicmanager
 google-talkplugin
+graphviz
 leiningen
 libio-socket-ssl-perl
 libnotify-bin
@@ -19,6 +20,7 @@ nautilus-dropbox
 nginx-doc
 nginx-light
 nodejs
+ntop
 pep8
 pylint
 python-django-doc
