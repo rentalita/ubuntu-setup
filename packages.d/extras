@@ -9,6 +9,8 @@ emacs-goodies-el
 exuberant-ctags
 git-doc
 gitk
+gnome-gpg
+gnupg-agent
 google-musicmanager
 google-talkplugin
 graphviz
