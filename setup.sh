@@ -25,6 +25,7 @@ KEYS="              \
     5044912E        \
     CE49EC21        \
     0C5A2783        \
+    3ACC3965        \
 "
 
 for KEY in ${KEYS}; do
