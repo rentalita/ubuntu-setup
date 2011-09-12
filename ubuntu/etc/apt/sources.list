@@ -1,11 +1,11 @@
-deb http://ftp.ccc.uba.ar/pub/linux/ubuntu/ natty main restricted
-deb http://ftp.ccc.uba.ar/pub/linux/ubuntu/ natty-updates main restricted
+deb @ubuntu@ natty main restricted
+deb @ubuntu@ natty-updates main restricted
 
-deb http://ftp.ccc.uba.ar/pub/linux/ubuntu/ natty multiverse universe
-deb http://ftp.ccc.uba.ar/pub/linux/ubuntu/ natty-updates multiverse universe
+deb @ubuntu@ natty multiverse universe
+deb @ubuntu@ natty-updates multiverse universe
 
-deb http://ftp.ccc.uba.ar/pub/linux/ubuntu/ natty-security main restricted
-deb http://ftp.ccc.uba.ar/pub/linux/ubuntu/ natty-security multiverse universe
+deb @ubuntu@ natty-security main restricted
+deb @ubuntu@ natty-security multiverse universe
 
-deb http://ftp.ccc.uba.ar/pub/linux/ubuntu/ natty-backports restricted main
-deb http://ftp.ccc.uba.ar/pub/linux/ubuntu/ natty-backports multiverse universe
+deb @ubuntu@ natty-backports restricted main
+deb @ubuntu@ natty-backports multiverse universe

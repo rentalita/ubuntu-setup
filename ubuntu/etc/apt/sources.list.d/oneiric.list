@@ -1,11 +1,11 @@
-deb http://ftp.ccc.uba.ar/pub/linux/ubuntu/ oneiric main restricted
-deb http://ftp.ccc.uba.ar/pub/linux/ubuntu/ oneiric-updates main restricted
+deb @ubuntu@ oneiric main restricted
+deb @ubuntu@ oneiric-updates main restricted
 
-deb http://ftp.ccc.uba.ar/pub/linux/ubuntu/ oneiric multiverse universe
-deb http://ftp.ccc.uba.ar/pub/linux/ubuntu/ oneiric-updates multiverse universe
+deb @ubuntu@ oneiric multiverse universe
+deb @ubuntu@ oneiric-updates multiverse universe
 
-deb http://ftp.ccc.uba.ar/pub/linux/ubuntu/ oneiric-security main restricted
-deb http://ftp.ccc.uba.ar/pub/linux/ubuntu/ oneiric-security multiverse universe
+deb @ubuntu@ oneiric-security main restricted
+deb @ubuntu@ oneiric-security multiverse universe
 
-deb http://ftp.ccc.uba.ar/pub/linux/ubuntu/ oneiric-backports restricted main
-deb http://ftp.ccc.uba.ar/pub/linux/ubuntu/ oneiric-backports multiverse universe
+deb @ubuntu@ oneiric-backports restricted main
+deb @ubuntu@ oneiric-backports multiverse universe

@@ -18,6 +18,8 @@ fi
 
 tar -C ubuntu -cf - $(cd ubuntu; find .) | $(sudo tar -C / -xf -)
 
+sudo ./update-sources.rb
+
 sudo chown -R root:root /etc/apt
 
 KEYS="              \
