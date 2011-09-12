@@ -1,5 +1,10 @@
 #!/bin/sh -e
 
+if [ "$(which ruby)" = "" ]; then
+    echo "Unable to locate ruby. Please run: sudo apt-get install ruby-full"
+    exit 1
+fi
+
 cd $(dirname $0)
 
 PACKAGES="$(cat packages.d/ubuntu)"
