@@ -5,6 +5,7 @@ libjs-jquery
 lighttpd
 python-coverage
 python-django
+python-django-south
 python-flup
 python-nose
 python-pip
