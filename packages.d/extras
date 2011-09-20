@@ -1,12 +1,16 @@
 banshee-extension-telepathy
+build-essential
 chromium-browser
 chromium-codecs-ffmpeg-extra
 clojure1.2
 compizconfig-settings-manager
+debhelper
+devscripts
 ecryptfs-utils
 emacs
 emacs-goodies-el
 exuberant-ctags
+fakeroot
 git-doc
 gitk
 gnome-gpg
