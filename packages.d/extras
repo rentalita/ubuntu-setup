@@ -25,7 +25,6 @@ libnotify-bin
 lighttpd-doc
 magit
 markdown
-mozilla-plugin-vlc
 nautilus-dropbox
 nginx-doc
 nginx-light
@@ -40,15 +39,10 @@ rails-doc
 ruby-elisp
 ruby-full
 skype
-sopcast-player
 sqlite3-doc
 ttf-droid
 ttf-mscorefonts-installer
 vim
 vim-doc
 vim-rails
-vlc
-vlc-plugin-notify
-vlc-plugin-pulse
-wine
 xfonts-terminus
