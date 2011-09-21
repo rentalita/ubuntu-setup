@@ -5,13 +5,17 @@ require 'yaml'
 
 archives = [
             {
-              :name => 'ubuntu',
-              :link => 'http://archive.ubuntu.com/ubuntu/',
+              'name' => 'ubuntu',
+              'link' => 'http://archive.ubuntu.com/ubuntu/',
             },
            ]
 
-File.open('update-sources.yaml') do |fd|
-  archives = YAML::load(fd)
+begin
+  File.open('update-sources.yaml') do |fd|
+    archives = YAML::load(fd)
+  end
+rescue
+  nil
 end
 
 Find.find('/etc/apt') do |name|
