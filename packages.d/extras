@@ -3,6 +3,7 @@ build-essential
 chromium-browser
 chromium-codecs-ffmpeg-extra
 clojure1.2
+cl-swank
 compizconfig-settings-manager
 debhelper
 devscripts
@@ -40,6 +41,7 @@ rails-doc
 ruby-elisp
 ruby-full
 skype
+slime
 sqlite3-doc
 ttf-droid
 ttf-mscorefonts-installer
