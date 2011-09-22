@@ -21,6 +21,8 @@ if [ ! "$1" = "" ]; then
     esac
 fi
 
+find /etc/apt -name "*list" | xargs sudo rm -f
+
 tar -C ubuntu -cf - $(cd ubuntu; find .) | $(sudo tar -C / -xf -)
 
 sudo ./update-sources.rb
