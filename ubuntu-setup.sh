@@ -7,7 +7,7 @@ fi
 
 cd $(dirname $0)
 
-PACKAGES="$(cat packages.d/ubuntu)"
+PACKAGES="$(cat packages.d/default)"
 
 if [ ! "$1" = "" ]; then
     case "$1" in
@@ -23,7 +23,7 @@ fi
 
 find /etc/apt -name "*list" | xargs sudo rm -f
 
-tar -C ubuntu -cf - $(cd ubuntu; find .) | $(sudo tar -C / -xf -)
+tar -C system.d -cf - $(cd system.d; find .) | $(sudo tar -C / -xf -)
 
 sudo ./update-sources.rb
 
