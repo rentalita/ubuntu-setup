@@ -51,7 +51,7 @@ change the defaults. A perl port would be appreciated.
 
 For example, if you're in Chile (super awesome!)...
 
-    cp update-sources.yaml.in update-sources.yaml
+    cp update-sources.yml.in update-sources.yml
 
 and then replace:
 

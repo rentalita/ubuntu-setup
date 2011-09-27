@@ -11,7 +11,7 @@ archives = [
            ]
 
 begin
-  File.open('update-sources.yaml') do |fd|
+  File.open('update-sources.yml') do |fd|
     archives = YAML::load(fd)
   end
 rescue
