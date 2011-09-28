@@ -2,6 +2,7 @@ byobu
 exim4
 git
 libjs-jquery
+libjs-jquery-tablesorter
 lighttpd
 python-coverage
 python-django
