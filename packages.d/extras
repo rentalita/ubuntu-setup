@@ -36,6 +36,7 @@ paredit-el
 pep8
 pylint
 python-django-doc
+python-sphinx
 rails
 rails-doc
 ruby-elisp
