@@ -1,9 +1,12 @@
 byobu
 exim4
 git
+libio-socket-ssl-perl
 libjs-jquery
 libjs-jquery-tablesorter
+libwww-perl
 lighttpd
+ngrep
 python-coverage
 python-django
 python-django-collector
