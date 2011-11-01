@@ -35,6 +35,8 @@ paredit-el
 pep8
 pylint
 python-django-doc
+python-pyramid
+python-scrapy
 python-sphinx
 rails
 rails-doc
@@ -43,6 +45,7 @@ ruby-full
 skype
 slime
 sqlite3-doc
+tofrodos
 ttf-droid
 ttf-mscorefonts-installer
 vim
