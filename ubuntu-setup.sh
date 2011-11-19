@@ -11,7 +11,7 @@ PACKAGES="$(cat packages.d/default)"
 
 if [ ! "$1" = "" ]; then
     case "$1" in
-        *extras)
+        --extras)
             PACKAGES="$(cat packages.d/*)"
             ;;
         *)
