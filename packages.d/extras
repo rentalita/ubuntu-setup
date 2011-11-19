@@ -22,6 +22,7 @@ graphviz
 leiningen
 libdvdcss2
 libnotify-bin
+libvirt-bin
 lighttpd-doc
 magit
 markdown
@@ -37,6 +38,7 @@ pylint
 python-django-doc
 python-pyramid
 python-sphinx
+qemu-kvm
 rails
 rails-doc
 ruby-elisp
@@ -50,4 +52,6 @@ ttf-mscorefonts-installer
 vim
 vim-doc
 vim-rails
+virt-manager
+virt-viewer
 xfonts-terminus
