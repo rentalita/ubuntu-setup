@@ -20,3 +20,4 @@ python-setuptools
 spawn-fcgi
 sqlite3
 ssl-cert
+tmux
