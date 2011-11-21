@@ -12,6 +12,7 @@ python-django
 python-django-collector
 python-django-south
 python-flup
+python-imaging
 python-nose
 python-pip
 python-reportlab-accel

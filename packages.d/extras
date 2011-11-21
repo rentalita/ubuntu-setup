@@ -35,6 +35,7 @@ ntop
 paredit-el
 pep8
 pylint
+python-django-debug-toolbar
 python-django-doc
 python-pyramid
 python-sphinx
