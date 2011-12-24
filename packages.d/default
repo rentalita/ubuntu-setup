@@ -7,17 +7,10 @@ libjs-jquery-tablesorter
 libwww-perl
 lighttpd
 ngrep
-python-coverage
-python-django
-python-django-collector
-python-django-south
 python-flup
 python-imaging
-python-nose
-python-pip
 python-reportlab-accel
 python-scrapy
-python-setuptools
 spawn-fcgi
 sqlite3
 ssl-cert

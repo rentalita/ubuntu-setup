@@ -28,13 +28,14 @@ magit
 markdown
 nautilus-dropbox
 nginx-doc
-nginx-light
+nginx-full
 nodejs
 non-free-codecs
 ntop
 nuvolaplayer
 paredit-el
 pep8
+puppet-el
 pylint
 python-django-debug-toolbar
 python-django-doc

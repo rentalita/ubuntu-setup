@@ -5,7 +5,19 @@ if [ "$(which ruby)" = "" ]; then
     exit 1
 fi
 
-cd $(dirname $0)
+SETUP_HOME="$(dirname $0)"
+export SETUP_HOME
+
+PUPPET_HOME="${SETUP_HOME}"/puppet
+export PUPPET_HOME
+
+PUPPET_MANIFESTS="${PUPPET_HOME}"/manifests
+export PUPPET_MANIFESTS
+
+PUPPET_MODULES="${PUPPET_HOME}"/modules
+export PUPPET_MODULES
+
+cd "${SETUP_HOME}"
 
 PACKAGES="$(cat packages.d/default)"
 
@@ -48,6 +60,8 @@ sudo apt-get update
 sudo apt-get dist-upgrade
 
 sudo apt-get install ${PACKAGES}
+
+sudo puppet apply --modulepath="${PUPPET_MODULES}" "${PUPPET_MANIFESTS}"/site.pp
 
 SERVICES="          \
     lighttpd        \
