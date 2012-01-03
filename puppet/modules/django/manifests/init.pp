@@ -1,5 +1,6 @@
 class django {
   include python
+  include lighttpd
 
   package {
     "python-flup":
