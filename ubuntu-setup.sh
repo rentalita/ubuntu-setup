@@ -64,7 +64,6 @@ sudo apt-get install ${PACKAGES}
 sudo puppet apply --modulepath="${PUPPET_MODULES}" "${PUPPET_MANIFESTS}"/site.pp
 
 SERVICES="          \
-    lighttpd        \
     nginx           \
 "
 

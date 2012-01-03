@@ -23,7 +23,6 @@ leiningen
 libdvdcss2
 libnotify-bin
 libvirt-bin
-lighttpd-doc
 magit
 markdown
 nautilus-dropbox

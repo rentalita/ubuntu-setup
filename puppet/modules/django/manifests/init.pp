@@ -1,9 +1,14 @@
 class django {
   package {
+    "python-flup":
+      ensure => latest,
+      provider => apt;
+  }
+  package {
     "python-django":
       ensure => latest,
       provider => apt,
-      alias => "Django";
+      require => Package["python-flup"];
   }
   package {
     "python-django-south":
@@ -36,9 +41,14 @@ class django {
       require => Package["python-django", "python-dateutil", "python-mimeparse"];
   }
   package {
+    "python-imaging":
+      ensure => latest,
+      provider => apt;
+  }
+  package {
     "git+git://github.com/rentalita/django-userena.git@twitter-bootstrap":
       ensure => latest,
       provider => pip,
-      require => Package["python-django"];
+      require => Package["python-django", "python-imaging"];
   }
 }

@@ -5,13 +5,8 @@ libio-socket-ssl-perl
 libjs-jquery
 libjs-jquery-tablesorter
 libwww-perl
-lighttpd
 ngrep
-python-flup
-python-imaging
 python-reportlab-accel
 python-scrapy
-spawn-fcgi
 sqlite3
-ssl-cert
 tmux
