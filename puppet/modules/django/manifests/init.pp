@@ -2,12 +2,8 @@ class django {
   include python
   include lighttpd
   include exim4
+  include sqlite3
 
-  package {
-    "sqlite3":
-      ensure => latest,
-      provider => apt;
-  }
   package {
     "python-flup":
       ensure => latest,
@@ -27,7 +23,7 @@ class django {
     "python-django":
       ensure => latest,
       provider => apt,
-      require => Package["sqlite3", "python-flup", "python-scrapy", "python-reportlab-accel"];
+      require => Package["python-flup", "python-scrapy", "python-reportlab-accel"];
   }
   package {
     "python-django-south":
