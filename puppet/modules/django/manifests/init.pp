@@ -1,6 +1,7 @@
 class django {
   include python
   include lighttpd
+  include exim4
 
   package {
     "sqlite3":
