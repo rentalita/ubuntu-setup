@@ -1,4 +1,4 @@
-class django::dev {
+class django::dev inherits django {
     package {
         "python-django-doc":
             ensure => latest,

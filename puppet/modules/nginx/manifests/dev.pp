@@ -1,4 +1,4 @@
-class nginx::dev {
+class nginx::dev inherits nginx {
   package {
     "nginx-doc":
       ensure => latest,

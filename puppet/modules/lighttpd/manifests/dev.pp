@@ -1,4 +1,4 @@
-class lighttpd::dev {
+class lighttpd::dev inherits lighttpd {
   package {
     "lighttpd-doc":
       ensure => latest,

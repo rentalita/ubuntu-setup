@@ -1,2 +1,2 @@
-class python::dev {
+class python::dev inherits python {
 }
