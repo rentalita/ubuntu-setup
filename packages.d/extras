@@ -35,7 +35,6 @@ pep8
 puppet-el
 pylint
 python-django-debug-toolbar
-python-django-doc
 python-pyramid
 python-sphinx
 qemu-kvm
