@@ -3,7 +3,22 @@ class django {
   include lighttpd
 
   package {
+    "sqlite3":
+      ensure => latest,
+      provider => apt;
+  }
+  package {
     "python-flup":
+      ensure => latest,
+      provider => apt;
+  }
+  package {
+    "python-scrapy":
+      ensure => latest,
+      provider => apt;
+  }
+  package {
+    "python-reportlab-accel":
       ensure => latest,
       provider => apt;
   }
@@ -11,7 +26,7 @@ class django {
     "python-django":
       ensure => latest,
       provider => apt,
-      require => Package["python-flup"];
+      require => Package["sqlite3", "python-flup", "python-scrapy", "python-reportlab-accel"];
   }
   package {
     "python-django-south":
