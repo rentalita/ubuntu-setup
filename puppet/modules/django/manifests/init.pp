@@ -10,29 +10,13 @@ class django {
       provider => apt;
   }
   package {
-    "python-scrapy":
-      ensure => latest,
-      provider => apt;
-  }
-  package {
-    "python-reportlab-accel":
-      ensure => latest,
-      provider => apt;
-  }
-  package {
     "python-django":
       ensure => latest,
       provider => apt,
-      require => Package["python-flup", "python-scrapy", "python-reportlab-accel"];
+      require => Package["python-flup"];
   }
   package {
     "python-django-south":
-      ensure => latest,
-      provider => apt,
-      require => Package["python-django"];
-  }
-  package {
-    "python-django-collector":
       ensure => latest,
       provider => apt,
       require => Package["python-django"];

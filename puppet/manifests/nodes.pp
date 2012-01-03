@@ -1,8 +1,8 @@
 node default {
-     include django
+     include rentalita
 }
 
 node /^(?!.*santiago).*$/ inherits default {
-     include django::dev
+     include rentalita::dev
      include nginx::dev
 }
