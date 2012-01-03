@@ -61,7 +61,7 @@ sudo apt-get dist-upgrade
 
 sudo apt-get install ${PACKAGES}
 
-sudo puppet apply --modulepath="${PUPPET_MODULES}" "${PUPPET_MANIFESTS}"/site.pp
+sudo puppet apply --verbose --modulepath="${PUPPET_MODULES}" "${PUPPET_MANIFESTS}"/site.pp
 
 sudo apt-get clean
 sudo apt-get autoremove --purge

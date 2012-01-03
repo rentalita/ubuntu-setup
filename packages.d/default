@@ -1,12 +1,7 @@
-byobu
-exim4
-git
 libio-socket-ssl-perl
 libjs-jquery
 libjs-jquery-tablesorter
 libwww-perl
-ngrep
 python-reportlab-accel
 python-scrapy
 sqlite3
-tmux
