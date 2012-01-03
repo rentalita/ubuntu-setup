@@ -75,9 +75,9 @@ A connection to the the series of tubes is required.
 
 ## CONTRIBUTE
 
-https://github.com/software6/ubuntu-setup
+https://github.com/rentalita/ubuntu-setup
 
 ## LICENSE
 
-Ubuntu Setup is brought to you by [Software 6](http://software6.net/)
+Ubuntu Setup is brought to you by [Rentalita](http://rentalita.com/)
 under the MIT License.
