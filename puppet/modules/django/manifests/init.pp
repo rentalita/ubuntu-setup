@@ -1,4 +1,6 @@
 class django {
+  include python
+
   package {
     "python-flup":
       ensure => latest,
