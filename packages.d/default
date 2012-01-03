@@ -1,7 +1,3 @@
-libio-socket-ssl-perl
-libjs-jquery
-libjs-jquery-tablesorter
-libwww-perl
 python-reportlab-accel
 python-scrapy
 sqlite3

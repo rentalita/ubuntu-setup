@@ -1,4 +1,6 @@
 class lighttpd {
+  include www
+
   package {
     "spawn-fcgi":
       ensure => latest,

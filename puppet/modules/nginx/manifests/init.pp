@@ -1,4 +1,6 @@
 class nginx {
+  include www
+
   package {
     "nginx":
       ensure => latest,

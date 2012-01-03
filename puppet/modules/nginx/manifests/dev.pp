@@ -1,4 +1,6 @@
 class nginx::dev inherits nginx {
+  include www::dev
+
   package {
     "nginx-doc":
       ensure => latest,
