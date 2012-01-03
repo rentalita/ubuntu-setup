@@ -63,18 +63,6 @@ sudo apt-get install ${PACKAGES}
 
 sudo puppet apply --modulepath="${PUPPET_MODULES}" "${PUPPET_MANIFESTS}"/site.pp
 
-SERVICES="          \
-    nginx           \
-"
-
-for SERVICE in ${SERVICES}; do
-    if [ ! -x /etc/init.d/"${SERVICE}" ]; then
-        continue
-    fi
-    sudo service "${SERVICE}" stop
-    sudo update-rc.d -f "${SERVICE}" remove
-done
-
 sudo apt-get clean
 sudo apt-get autoremove --purge
 
