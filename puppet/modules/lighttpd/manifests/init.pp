@@ -7,11 +7,6 @@ class lighttpd {
       provider => apt;
   }
   package {
-    "ssl-cert":
-      ensure => latest,
-      provider => apt;
-  }
-  package {
     "lighttpd":
       ensure => latest,
       provider => apt,

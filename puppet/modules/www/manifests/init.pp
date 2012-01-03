@@ -1,5 +1,10 @@
 class www {
   package {
+    "ssl-cert":
+      ensure => latest,
+      provider => apt;
+  }
+  package {
     "libio-socket-ssl-perl":
       ensure => latest,
       provider => apt;
