@@ -20,7 +20,6 @@ class lighttpd {
     "lighttpd":
       enable => false,
       ensure => stopped,
-      provider => debian,
       require => Package["lighttpd"];
   }
 }
