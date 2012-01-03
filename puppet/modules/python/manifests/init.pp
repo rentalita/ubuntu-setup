@@ -1,4 +1,5 @@
 class python {
+
     package {
         "python-setuptools":
             ensure => latest,

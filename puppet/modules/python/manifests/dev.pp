@@ -1,4 +1,5 @@
 class python::dev inherits python {
+
   package {
     "python-doc":
       ensure => latest,

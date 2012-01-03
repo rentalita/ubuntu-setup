@@ -1,4 +1,5 @@
 class www {
+
   package {
     "ssl-cert":
       ensure => latest,
