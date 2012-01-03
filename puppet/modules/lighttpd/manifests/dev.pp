@@ -4,6 +4,7 @@ class lighttpd::dev inherits lighttpd {
   package {
     "lighttpd-doc":
       ensure => latest,
-      provider => apt;
+      provider => apt,
+      require => Package["lighttpd"];
   }
 }

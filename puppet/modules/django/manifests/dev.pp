@@ -7,6 +7,7 @@ class django::dev inherits django {
   package {
     "python-django-doc":
       ensure => latest,
-      provider => apt;
+      provider => apt,
+      require => Package["python-django"];
   }
 }
