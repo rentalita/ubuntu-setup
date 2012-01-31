@@ -45,10 +45,8 @@ sudo chown -R root:root /etc/apt
 KEYS="              \
     7FAC5991        \
     5044912E        \
-    CE49EC21        \
     0C5A2783        \
     4E5E17B5        \
-    C5366A05        \
     233DD144        \
 "
 
