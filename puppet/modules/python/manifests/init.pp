@@ -11,13 +11,13 @@ class python {
             provider => apt;
     }
     package {
-        "python-nose":
+        "python-coverage":
             ensure => latest,
             provider => apt;
     }
     package {
-        "python-coverage":
+        "nose":
             ensure => latest,
-            provider => apt;
+            provider => pip;
     }
 }
