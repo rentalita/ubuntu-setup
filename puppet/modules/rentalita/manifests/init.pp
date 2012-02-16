@@ -14,9 +14,9 @@ class rentalita {
       require => Package["python-django"];
   }
   package {
-    "python-django-collector":
+    "django-collector":
       ensure => latest,
-      provider => apt,
+      provider => pip,
       require => Package["python-django"];
   }
 }
