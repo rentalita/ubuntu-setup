@@ -16,7 +16,6 @@ git-doc
 gitk
 gnome-gpg
 gnupg-agent
-google-musicmanager
 google-talkplugin
 graphviz
 leiningen
@@ -29,7 +28,6 @@ nautilus-dropbox
 nodejs
 non-free-codecs
 ntop
-nuvolaplayer
 paredit-el
 puppet-el
 python-django-debug-toolbar
