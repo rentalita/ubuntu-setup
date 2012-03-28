@@ -63,6 +63,9 @@ sudo puppet apply --verbose --modulepath="${PUPPET_MODULES}" "${PUPPET_MANIFESTS
 sudo apt-get clean
 sudo apt-get autoremove --purge
 
+sudo pip uninstall django
+sudo pip install django==1.3.1
+
 # Local Variables:
 # indent-tabs-mode: nil
 # End:
