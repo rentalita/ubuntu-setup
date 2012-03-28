@@ -45,7 +45,7 @@ class django {
       provider => apt;
   }
   package {
-    "git+git://github.com/rentalita/django-userena.git@twitter-bootstrap":
+    "git+git://github.com/rentalita/django-userena.git@bootstrap":
       ensure => latest,
       provider => pip,
       require => Package["python-django", "python-imaging"];
