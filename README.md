@@ -1,4 +1,4 @@
-Ubuntu Setup -- Sets up an Ubuntu machine.
+Ubuntu Setup -- Sets up an Ubuntu machine suing Salt.
 ===
 
 ## RATIONALE
@@ -28,38 +28,8 @@ is usually a reasonable vetting process.
 
 ## RUNNING
 
-    ./ubuntu-setup.sh [--extras]
-
-#### OPTIONS
-
- * `--extras`
-
-This option installs a bunch of additional extra packages, like Emacs
-and the Chromium web browser. These are packages that we like to have
-around during our day-to-day development activities.
-
-## CHICKEN AND EGG
-
-Before you run `ubuntu-setup.sh` for the very first time, please run:
-
-    sudo apt-get install --no-install-recommends ruby-full
-
-A ruby script is used to update the source lists under
-`/etc/apt`. This allows you to select your own preferred package
-archive locations. You'll need to install ruby even if you don't
-change the defaults. A perl port would be appreciated.
-
-For example, if you're in Chile (super awesome!)...
-
-    cp update-sources.yml.in update-sources.yml
-
-and then replace:
-
-    link: http://archive.ubuntu.com/ubuntu/
-
-with:
-
-    link: http://mirror.netlinux.cl/ubuntu/
+    # TODO: Setup salt master and minion.
+    ./ubuntu-setup.sh
 
 ## CAVEATS
 
@@ -72,6 +42,15 @@ The idea is to keep the default as lean-and-mean as possible. Cheaper
 disk sizes in the cloud. Quicker backups.
 
 A connection to the the series of tubes is required.
+
+## HISTORY
+
+About seven years ago Ubuntu Setup started out as a set of shell
+scripts. Since then other people have begun to solve the same problems
+in much more sophisticated ways. A swtich to Chef seemed looked like
+nothing more than swapping bash for ruby. We like Puppet's declarative
+syntax, but it makes simple tasks hard. We've been quite pleased with
+[Salt](http://saltstack.org/).
 
 ## CONTRIBUTE
 
