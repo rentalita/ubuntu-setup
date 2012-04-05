@@ -1,4 +1,4 @@
-Ubuntu Setup -- Sets up an Ubuntu machine suing Salt.
+Ubuntu Setup -- Sets up an Ubuntu machine using Salt.
 ===
 
 ## RATIONALE
