@@ -45,10 +45,24 @@ python-imaging:
   pkg:
     - latest
 
-# TODO: "git+git://github.com/rentalita/django-userena.git@bootstrap":
-# python-django-userena:
-#   pkg:
-#     - latest
-#     - require:
-#       - pkg: python-imaging
-#       - pkg: python-django
+python-django-userena:
+  pip:
+    - installed
+    - name: git+git://github.com/rentalita/django-userena.git@bootstrap
+    - require:
+      - pkg: python-imaging
+      - pkg: python-django
+
+python-django-celery:
+  pip:
+    - installed
+    - name: django-celery
+    - require:
+      - pkg: python-django
+
+python-django-mailchimp:
+  pip:
+    - installed
+    - name: django-mailchimp
+    - require:
+      - pkg: python-django
