@@ -10,17 +10,6 @@ sudo apt-get dist-upgrade
 # on minion:
 #   set "master" to "appropriate hostname" in /etc/salt/minion
 
-KEYS="              \
-    7FAC5991        \
-    5044912E        \
-    0C5A2783        \
-    4E5E17B5        \
-"
-
-for KEY in ${KEYS}; do
-    sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com ${KEY}
-done
-
 sudo rm -f /etc/apt/sources.list.d/*
 sudo salt '*' state.highstate
 
