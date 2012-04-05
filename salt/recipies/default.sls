@@ -82,6 +82,17 @@
     - watch:
       - file: /etc/apt/sources.list.d/medibuntu.list
 
+/etc/apt/sources.list.d:
+  file:
+    - directory
+    - clean: True
+    - require:
+      - file: /etc/apt/sources.list.d/canonical.list
+      - file: /etc/apt/sources.list.d/chromium.list
+      - file: /etc/apt/sources.list.d/dropbox.list
+      - file: /etc/apt/sources.list.d/google-talkplugin.list
+      - file: /etc/apt/sources.list.d/medibuntu.list
+
 default:
   pkg:
     - latest
@@ -90,8 +101,4 @@ default:
     - require:
       - file: /etc/apt/apt.conf.d/99local
       - file: /etc/apt/sources.list
-      - file: /etc/apt/sources.list.d/canonical.list
-      - file: /etc/apt/sources.list.d/chromium.list
-      - file: /etc/apt/sources.list.d/dropbox.list
-      - file: /etc/apt/sources.list.d/google-talkplugin.list
-      - file: /etc/apt/sources.list.d/medibuntu.list
+      - file: /etc/apt/sources.list.d

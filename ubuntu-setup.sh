@@ -10,7 +10,6 @@ sudo apt-get dist-upgrade
 # on minion:
 #   set "master" to "appropriate hostname" in /etc/salt/minion
 
-sudo rm -f /etc/apt/sources.list.d/*
 sudo salt '*' state.highstate
 
 sudo apt-get update
