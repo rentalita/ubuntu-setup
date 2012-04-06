@@ -1,5 +1,5 @@
 include:
-  - recipies.lighttpd
+  - lighttpd
 
 lighttpd-dev:
   pkg:

@@ -9,3 +9,5 @@ deb http://cl.archive.ubuntu.com/ubuntu/ precise-security multiverse universe
 
 deb http://cl.archive.ubuntu.com/ubuntu/ precise-backports restricted main
 deb http://cl.archive.ubuntu.com/ubuntu/ precise-backports multiverse universe
+
+deb http://archive.canonical.com/ubuntu precise partner

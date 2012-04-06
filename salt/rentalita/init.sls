@@ -1,6 +1,6 @@
 include:
-  - recipies.default
-  - recipies.django
+  - default
+  - django
 
 rabbitmq-server:
   pkg:

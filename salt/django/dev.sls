@@ -1,9 +1,9 @@
 include:
-  - recipies.python-dev
-  - recipies.lighttpd-dev
-  - recipies.exim4-dev
-  - recipies.sqlite3-dev
-  - recipies.django
+  - python.dev
+  - lighttpd.dev
+  - exim4.dev
+  - sqlite3.dev
+  - django
 
 python-django-dev:
   pkg:

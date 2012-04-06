@@ -1,5 +1,5 @@
 include:
-  - recipies.python
+  - python
 
 python-dev:
   pkg:

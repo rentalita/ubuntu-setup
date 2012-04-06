@@ -1,5 +1,5 @@
 include:
-  - recipies.sqlite3
+  - sqlite3
 
 sqlite3-dev:
   pkg:

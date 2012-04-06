@@ -1,5 +1,8 @@
 include:
-  - recipies.default
+  - default
+  - medibuntu
+  - chromium
+  - dropbox
 
 default-dev:
   pkg:
@@ -24,13 +27,10 @@ default-dev:
       - xfonts-terminus
       - fonts-droid
       - ttf-mscorefonts-installer
-      - non-free-codecs
-      - libdvdcss2
-      - chromium-browser
-      - chromium-codecs-ffmpeg-extra
-      - nautilus-dropbox
       - skype
-      - google-talkplugin
       # TODO: clojure & leiningen
     - require:
       - pkg: default
+      - pkg: medibuntu
+      - pkg: chromium
+      - pkg: dropbox

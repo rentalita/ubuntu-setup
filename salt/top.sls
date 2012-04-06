@@ -1,5 +1,5 @@
 base:
   '*':
-    - recipies.rentalita
+    - rentalita
   'beisbol':
-    - recipies.rentalita-dev
+    - rentalita.dev

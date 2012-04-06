@@ -1,8 +1,8 @@
 include:
-  - recipies.python
-  - recipies.lighttpd
-  - recipies.exim4
-  - recipies.sqlite3
+  - python
+  - lighttpd
+  - exim4
+  - sqlite3
 
 python-flup:
   pkg:

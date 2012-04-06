@@ -1,5 +1,5 @@
 include:
-  - recipies.exim4
+  - exim4
 
 exim4-dev:
   pkg:
