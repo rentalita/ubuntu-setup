@@ -1,3 +1,8 @@
+5044912E:
+  cmd:
+    - run
+    - name: apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 5044912E
+
 /etc/apt/sources.list.d/dropbox.list:
   file:
     - managed
@@ -5,16 +10,13 @@
     - user: root
     - group: root
     - mode: 644
-
-5044912E:
-  cmd:
-    - wait
-    - name: apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 5044912E
-    - watch:
-      - file: /etc/apt/sources.list.d/dropbox.list
+    - requires:
+      - file: 5044912E
 
 dropbox:
   pkg:
     - latest
     - names:
       - nautilus-dropbox
+    - requires:
+      - file: /etc/apt/sources.list.d/dropbox.list
