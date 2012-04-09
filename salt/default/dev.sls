@@ -1,8 +1,8 @@
 include:
   - default
-  - medibuntu
   - chromium
   - dropbox
+  - medibuntu
 
 default-dev:
   pkg:
@@ -31,6 +31,6 @@ default-dev:
       # TODO: clojure & leiningen
     - require:
       - pkg: default
-      - pkg: medibuntu
       - pkg: chromium
       - pkg: dropbox
+      - pkg: medibuntu

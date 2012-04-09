@@ -1,8 +1,5 @@
 #!/bin/sh -e
 
-sudo apt-get update
-sudo apt-get dist-upgrade
-
 # add ppa:saltstack/salt
 # install salt-master and salt-minion
 # on master:
@@ -11,9 +8,6 @@ sudo apt-get dist-upgrade
 #   set "master" to "appropriate hostname" in /etc/salt/minion
 
 sudo salt '*' state.highstate
-
-sudo apt-get update
-sudo apt-get dist-upgrade
 
 sudo apt-get clean
 sudo apt-get autoremove --purge
