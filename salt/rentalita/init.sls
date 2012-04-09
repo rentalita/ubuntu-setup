@@ -15,6 +15,21 @@ python-celery:
     - require:
       - pkg: rabbitmq-server
 
+python-django-celery:
+  pip:
+    - installed
+    - name: django-celery
+    - require:
+      - pkg: python-celery
+      - pkg: python-django
+
+python-django-mailchimp:
+  pip:
+    - installed
+    - name: django-mailchimp
+    - require:
+      - pkg: python-django
+
 rentalita:
   pkg:
     - latest
@@ -22,5 +37,6 @@ rentalita:
       - python-scrapy
       - python-reportlab-accel
     - require:
-      - pkg: python-celery
       - pkg: python-django
+      - pkg: python-django-celery
+      - pkg: python-django-mailchimp
