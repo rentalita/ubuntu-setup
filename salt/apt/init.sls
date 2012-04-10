@@ -2,11 +2,12 @@ include:
   - chromium.apt
   - dropbox.apt
   - medibuntu.apt
+  - saltstack.apt
 
 /etc/apt/apt.conf.d/99local:
   file:
     - managed
-    - source: salt://default/apt.conf
+    - source: salt://apt/apt.conf
     - user: root
     - group: root
     - mode: 644
@@ -14,7 +15,7 @@ include:
 /etc/apt/sources.list:
   file:
     - managed
-    - source: salt://default/sources.list
+    - source: salt://apt/sources.list
     - user: root
     - group: root
     - mode: 644
@@ -28,6 +29,7 @@ include:
       - file: /etc/apt/sources.list.d/google-talkplugin.list
       - file: /etc/apt/sources.list.d/dropbox.list
       - file: /etc/apt/sources.list.d/medibuntu.list
+      - file: /etc/apt/sources.list.d/saltstack.list
 
 apt-update:
   cmd:
