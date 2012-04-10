@@ -7,6 +7,6 @@ default:
     - latest
     - names:
       - tmux
-      - saltstack
+      # - saltstack
     - require:
       - cmd: apt-upgrade
