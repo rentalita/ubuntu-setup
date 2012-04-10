@@ -52,3 +52,31 @@ python-imaging:
 #     - require:
 #       - pkg: python-imaging
 #       - pkg: python-django
+
+rabbitmq-server:
+  pkg:
+    - latest
+  service:
+    - running
+    - enable: True
+
+python-celery:
+  pkg:
+    - latest
+    - require:
+      - pkg: rabbitmq-server
+
+python-django-celery:
+  pip:
+    - installed
+    - name: django-celery
+    - require:
+      - pkg: python-celery
+      - pkg: python-django
+
+python-django-mailchimp:
+  pip:
+    - installed
+    - name: django-mailchimp
+    - require:
+      - pkg: python-django
