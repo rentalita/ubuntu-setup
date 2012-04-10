@@ -43,6 +43,6 @@ apt-update:
 apt-upgrade:
   cmd:
     - run
-    - name: apt-get dist-upgrade
+    - name: apt-get --assume-yes dist-upgrade
     - require:
       - cmd: apt-update

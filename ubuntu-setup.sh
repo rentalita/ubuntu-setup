@@ -7,7 +7,7 @@
 # on minion:
 #   set "master" to "appropriate hostname" in /etc/salt/minion
 
-sudo salt '*' state.highstate
+sudo salt -t 600 '*' state.highstate
 
 sudo pip install git+git://github.com/rentalita/django-userena.git@bootstrap 
 
