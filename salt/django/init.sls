@@ -45,10 +45,10 @@ python-imaging:
   pkg:
     - latest
 
-python-django-userena:
-  pip:
-    - installed
-    - name: git+git://github.com/rentalita/django-userena.git@bootstrap
-    - require:
-      - pkg: python-imaging
-      - pkg: python-django
+# python-django-userena:
+#   pip:
+#     - installed
+#     - name: git+git://github.com/rentalita/django-userena.git@bootstrap
+#     - require:
+#       - pkg: python-imaging
+#       - pkg: python-django
