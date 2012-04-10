@@ -1,8 +1,3 @@
-5044912E:
-  cmd:
-    - run
-    - name: apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 5044912E
-
 /etc/apt/sources.list.d/medibuntu.list:
   file:
     - managed
@@ -10,5 +5,10 @@
     - user: root
     - group: root
     - mode: 644
-    - requires:
-      - cmd: 5044912E
+
+medibuntu-apt:
+  cmd:
+    - wait
+    - name: apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0C5A2783
+    - watch:
+      - file: /etc/apt/sources.list.d/medibuntu.list
