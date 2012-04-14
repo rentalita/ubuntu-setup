@@ -6,6 +6,7 @@ default:
     - latest
     - names:
       - fabric
+      - realpath
       - tmux
     - require:
       - cmd: apt-upgrade
