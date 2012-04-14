@@ -9,4 +9,4 @@ exim4:
       - pkg: exim4-daemon-light
   service:
     - running
-    - enable: True
+    - enabled: True

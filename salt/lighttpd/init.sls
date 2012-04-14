@@ -20,4 +20,4 @@ lighttpd:
       - pkg: spawn-fcgi
   service:
     - dead
-    - enable: False
+    - enabled: False

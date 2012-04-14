@@ -58,7 +58,7 @@ rabbitmq-server:
     - latest
   service:
     - running
-    - enable: True
+    - enabled: True
 
 python-celery:
   pkg:
