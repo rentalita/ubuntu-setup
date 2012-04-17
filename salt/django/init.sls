@@ -60,11 +60,22 @@ rabbitmq-server:
     - running
     - enabled: True
 
+python-kombu:
+  pkg:
+    - latest
+
 python-celery:
   pkg:
     - latest
     - require:
       - pkg: rabbitmq-server
+      - pkg: python-kombu
+
+python-django-picklefield:
+  pkg:
+    - latest
+    - require:
+      - pkg: python-django
 
 python-django-celery:
   pip:
@@ -72,7 +83,7 @@ python-django-celery:
     - name: django-celery
     - require:
       - pkg: python-celery
-      - pkg: python-django
+      - pkg: python-django-picklefield
 
 python-django-mailchimp:
   pip:

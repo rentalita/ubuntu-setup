@@ -28,6 +28,7 @@ default-dev:
       - fonts-droid
       - ttf-mscorefonts-installer
       - skype
+      - beets
       # TODO: clojure & leiningen
     - require:
       - pkg: default
