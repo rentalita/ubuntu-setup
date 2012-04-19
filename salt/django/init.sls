@@ -58,7 +58,7 @@ rabbitmq-server:
     - latest
   service:
     - running
-    - enabled: True
+    - enable: True
 
 python-kombu:
   pkg:
