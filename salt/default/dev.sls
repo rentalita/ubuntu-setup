@@ -19,6 +19,8 @@ default-dev:
       - slime
       - cl-swank
       - magit
+      - dconf-tools
+      - fabric
       - qemu-kvm
       - libvirt-bin
       - virt-manager

@@ -5,7 +5,6 @@ default:
   pkg:
     - latest
     - names:
-      - fabric
       - realpath
       - tmux
     - require:
