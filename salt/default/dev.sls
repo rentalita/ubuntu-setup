@@ -21,7 +21,8 @@ default-dev:
       - magit
       - dconf-tools
       - fabric
-      - qemu-kvm
+      - qemu-kvm-spice
+      - python-spice-client-gtk
       - libvirt-bin
       - virt-manager
       - virt-viewer
