@@ -9,8 +9,6 @@
 
 sudo salt -t 600 '*' state.highstate
 
-sudo pip install git+git://github.com/rentalita/django-userena.git@bootstrap 
-
 sudo apt-get clean
 sudo apt-get autoremove --purge
 

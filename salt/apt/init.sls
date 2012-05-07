@@ -3,6 +3,7 @@ include:
   - dropbox.apt
   - medibuntu.apt
   - saltstack.apt
+  - rentalita.apt
 
 /etc/apt/apt.conf.d/99local:
   file:
@@ -30,6 +31,7 @@ include:
       - file: /etc/apt/sources.list.d/dropbox.list
       - file: /etc/apt/sources.list.d/medibuntu.list
       - file: /etc/apt/sources.list.d/saltstack.list
+      - file: /etc/apt/sources.list.d/rentalita.list
 
 apt-update:
   cmd:
@@ -44,6 +46,7 @@ apt-update:
       - cmd: dropbox-apt
       - cmd: medibuntu-apt
       - cmd: saltstack-apt
+      - cmd: rentalita-apt
 
 apt-upgrade:
   cmd:
