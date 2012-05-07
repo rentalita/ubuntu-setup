@@ -20,7 +20,7 @@ default-dev:
       - cl-swank
       - magit
       - dconf-tools
-      - gconf-tools
+      - gconf-editor
       - fabric
       - qemu-kvm-spice
       - python-spice-client-gtk
