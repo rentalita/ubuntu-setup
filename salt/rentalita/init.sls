@@ -57,4 +57,4 @@ rentalita:
       - pkg: python-django
       - pkg: python-django-lutefisk
       - pkg: python-django-celery
-      - pkg: python-django-mailchimp
+      - pip: python-django-mailchimp
