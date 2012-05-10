@@ -1,5 +1,25 @@
 #!/bin/sh -e
 
+# apt-get update
+# apt-get install --no-install-recommends etckeeper
+# apt-get dist-upgrade --no-install-recommends
+# apt-get clean
+
+# adduser tvaughan
+# adduser tvaughan sudo
+# passwd -dl root
+
+# vi /etc/ssh/sshd_config
+# service ssh restart
+
+# vi /etc/hostname
+# vi /etc/hosts
+# vi /etc/default/dhcpcd
+# service hostname restart
+
+# dpkg-reconfigure tzdata
+# apt-get install --no-install-recommends git
+
 # add ppa:saltstack/salt
 # install salt-master and salt-minion
 # on master:
@@ -9,8 +29,8 @@
 
 sudo salt -t 600 '*' state.highstate
 
-sudo apt-get clean
-sudo apt-get autoremove --purge
+sudo salt '*' cmd.run 'apt-get clean'
+sudo salt '*' cmd.run 'apt-get autoremove --purge'
 
 # Local Variables:
 # indent-tabs-mode: nil
