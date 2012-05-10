@@ -5,10 +5,6 @@
 # apt-get dist-upgrade --no-install-recommends
 # apt-get clean
 
-# adduser tvaughan
-# adduser tvaughan sudo
-# passwd -dl root
-
 # vi /etc/hostname
 # vi /etc/hosts
 # vi /etc/default/dhcpcd
@@ -17,12 +13,18 @@
 # dpkg-reconfigure tzdata
 # apt-get install --no-install-recommends git
 
-# add ppa:saltstack/salt
-# install salt-master and salt-minion
-# on master:
-#   sudo ln -s $(pwd)/salt /src/salt
+# adduser tvaughan
+# adduser tvaughan sudo
+# passwd -dl root
+
+# add saltstack ppa
+# apt-get install salt-master and salt-minion
 # on minion:
 #   set "master" to "appropriate hostname" in /etc/salt/minion
+# on master:
+#   salt-key -A
+#   git clone git://github.com/rentalita/ubuntu-setup.git
+#   ln -s ubuntu-setup/salt /srv/salt
 
 sudo salt -t 600 '*' state.highstate
 
