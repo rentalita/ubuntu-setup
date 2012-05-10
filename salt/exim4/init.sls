@@ -37,8 +37,7 @@ exim4:
   service:
     - running
     - enable: True
-    - require:
-      - file: /etc/mailname
     - watch:
       - cmd: update-exim4.conf
       - alias: root
+      - file: /etc/mailname
