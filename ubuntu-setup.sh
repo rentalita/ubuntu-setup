@@ -9,9 +9,6 @@
 # adduser tvaughan sudo
 # passwd -dl root
 
-# vi /etc/ssh/sshd_config
-# service ssh restart
-
 # vi /etc/hostname
 # vi /etc/hosts
 # vi /etc/default/dhcpcd
