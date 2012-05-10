@@ -26,7 +26,7 @@
 #   git clone git://github.com/rentalita/ubuntu-setup.git
 #   ln -s ubuntu-setup/salt /srv/salt
 
-sudo salt -t 600 '*' state.highstate
+sudo salt -t 6000 '*' state.highstate
 
 sudo salt '*' cmd.run 'apt-get clean'
 sudo salt '*' cmd.run 'apt-get autoremove --purge'
