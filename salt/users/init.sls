@@ -11,7 +11,7 @@ tvaughan:
     - home: /home/tvaughan
     - uid: 1000
     - gid: 1000
-    - groups:
-      - sudo
-      - libvirtd
-      - kvm
+  ssh_auth:
+    - present
+    - user: tvaughan
+    - source: salt://users/tvaughan.id_rsa.pub

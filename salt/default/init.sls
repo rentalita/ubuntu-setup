@@ -5,6 +5,7 @@ default:
   pkg:
     - latest
     - names:
+      - sudo
       - realpath
       - tmux
     - require:
