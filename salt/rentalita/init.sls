@@ -51,6 +51,7 @@ rentalita:
   pkg:
     - latest
     - names:
+      - python-imaging
       - python-scrapy
       - python-reportlab-accel
     - require:
