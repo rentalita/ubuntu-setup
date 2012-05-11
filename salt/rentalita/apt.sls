@@ -1,3 +1,9 @@
+rentalita-apt:
+  cmd:
+    - run
+    - name: apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 92238311
+    - unless: apt-key list | grep -q 92238311
+
 /etc/apt/sources.list.d/rentalita.list:
   file:
     - managed
@@ -5,10 +11,5 @@
     - user: root
     - group: root
     - mode: 644
-
-rentalita-apt:
-  cmd:
-    - wait
-    - name: apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 92238311
-    - watch:
-      - file: /etc/apt/sources.list.d/rentalita.list
+    - require:
+      - cmd: rentalita-apt

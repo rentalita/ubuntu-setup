@@ -1,3 +1,9 @@
+dropbox-apt:
+  cmd:
+    - run
+    - name: apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 5044912E
+    - unless: apt-key list | grep -q 5044912E
+
 /etc/apt/sources.list.d/dropbox.list:
   file:
     - managed
@@ -5,10 +11,5 @@
     - user: root
     - group: root
     - mode: 644
-
-dropbox-apt:
-  cmd:
-    - wait
-    - name: apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 5044912E
-    - watch:
-      - file: /etc/apt/sources.list.d/dropbox.list
+    - require:
+      - cmd: dropbox-apt

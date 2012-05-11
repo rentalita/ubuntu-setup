@@ -41,12 +41,6 @@ apt-update:
       - file: /etc/apt/apt.conf.d/99local
       - file: /etc/apt/sources.list
       - file: /etc/apt/sources.list.d
-      - cmd: chromium-apt
-      - cmd: google-talkplugin-apt
-      - cmd: dropbox-apt
-      - cmd: medibuntu-apt
-      - cmd: saltstack-apt
-      - cmd: rentalita-apt
 
 apt-upgrade:
   cmd:

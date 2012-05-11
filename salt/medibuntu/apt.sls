@@ -1,3 +1,9 @@
+medibuntu-apt:
+  cmd:
+    - run
+    - name: apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0C5A2783
+    - unless: apt-key list | grep -q 0C5A2783
+
 /etc/apt/sources.list.d/medibuntu.list:
   file:
     - managed
@@ -5,10 +11,5 @@
     - user: root
     - group: root
     - mode: 644
-
-medibuntu-apt:
-  cmd:
-    - wait
-    - name: apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0C5A2783
-    - watch:
-      - file: /etc/apt/sources.list.d/medibuntu.list
+    - require:
+      - cmd: medibuntu-apt
