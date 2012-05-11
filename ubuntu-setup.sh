@@ -3,28 +3,35 @@
 # apt-get update
 # apt-get install --no-install-recommends etckeeper
 # apt-get dist-upgrade --no-install-recommends
+# apt-get install --no-install-recommends git
 # apt-get clean
 
 # vi /etc/hostname
 # vi /etc/hosts
-# vi /etc/default/dhcpcd
+# vi /etc/default/dhcpcd (maybe)
 # service hostname restart
 
 # dpkg-reconfigure tzdata
-# apt-get install --no-install-recommends git
 
 # adduser tvaughan
 # adduser tvaughan sudo
 # passwd -dl root
 
-# add saltstack ppa
-# apt-get install salt-master and salt-minion
+# echo "deb http://ppa.launchpad.net/saltstack/salt/ubuntu precise main" > /etc/apt/sources.list.d/saltstack.list
+# apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0E27C0A6
+# apt-get update
+
 # on minion:
+#   apt-get install salt-minion
+#   apt-get clean
 #   set "master" to "appropriate hostname" in /etc/salt/minion
+#   service salt-minion restart
 # on master:
-#   salt-key -A
+#   apt-get install salt-master
+#   apt-get clean
+#   salt-key -A (danger!!!)
 #   git clone git://github.com/rentalita/ubuntu-setup.git
-#   ln -s ubuntu-setup/salt /srv/salt
+#   ln -s $(pwd)/ubuntu-setup/salt /srv/salt
 
 sudo salt -t 6000 '*' state.highstate
 
