@@ -15,3 +15,10 @@ tvaughan:
     - present
     - user: tvaughan
     - source: salt://users/tvaughan.id_rsa.pub
+
+root:
+  alias:
+    - present
+    - target: tvaughan
+    - require:
+      - user: tvaughan

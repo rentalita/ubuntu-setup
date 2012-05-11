@@ -18,11 +18,6 @@ update-exim4.conf:
     - watch:
       - file: /etc/exim4/update-exim4.conf.conf
 
-root:
-  alias:
-    - present
-    - target: tvaughan
-
 /etc/mailname:
   file:
     - managed
@@ -39,5 +34,4 @@ exim4:
     - enable: True
     - watch:
       - cmd: update-exim4.conf
-      - alias: root
       - file: /etc/mailname
