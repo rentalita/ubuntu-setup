@@ -6,6 +6,12 @@
 # apt-get install --no-install-recommends git
 # apt-get clean
 
+# adduser tvaughan
+# adduser tvaughan sudo
+# passwd -dl root
+
+# exit 0
+
 # vi /etc/hostname
 # vi /etc/hosts
 # vi /etc/default/dhcpcd (maybe)
@@ -13,22 +19,16 @@
 
 # dpkg-reconfigure tzdata
 
-# adduser tvaughan
-# adduser tvaughan sudo
-# passwd -dl root
-
 # echo "deb http://ppa.launchpad.net/saltstack/salt/ubuntu precise main" > /etc/apt/sources.list.d/saltstack.list
 # apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0E27C0A6
 # apt-get update
+# apt-get install --no-install-recommends salt-master salt-minion
+# apt-get clean
 
 # on minion:
-#   apt-get install salt-minion
-#   apt-get clean
 #   set "master" to "appropriate hostname" in /etc/salt/minion
 #   service salt-minion restart
 # on master:
-#   apt-get install salt-master
-#   apt-get clean
 #   salt-key -A (danger!!!)
 #   git clone git://github.com/rentalita/ubuntu-setup.git
 #   ln -s $(pwd)/ubuntu-setup/salt /srv/salt
