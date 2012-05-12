@@ -1,13 +1,13 @@
-deb http://cl.archive.ubuntu.com/ubuntu/ precise main restricted
-deb http://cl.archive.ubuntu.com/ubuntu/ precise-updates main restricted
+deb http://us.archive.ubuntu.com/ubuntu/ precise main restricted
+deb http://us.archive.ubuntu.com/ubuntu/ precise-updates main restricted
 
-deb http://cl.archive.ubuntu.com/ubuntu/ precise multiverse universe
-deb http://cl.archive.ubuntu.com/ubuntu/ precise-updates multiverse universe
+deb http://us.archive.ubuntu.com/ubuntu/ precise multiverse universe
+deb http://us.archive.ubuntu.com/ubuntu/ precise-updates multiverse universe
 
-deb http://cl.archive.ubuntu.com/ubuntu/ precise-security main restricted
-deb http://cl.archive.ubuntu.com/ubuntu/ precise-security multiverse universe
+deb http://us.archive.ubuntu.com/ubuntu/ precise-security main restricted
+deb http://us.archive.ubuntu.com/ubuntu/ precise-security multiverse universe
 
-deb http://cl.archive.ubuntu.com/ubuntu/ precise-backports restricted main
-deb http://cl.archive.ubuntu.com/ubuntu/ precise-backports multiverse universe
+deb http://us.archive.ubuntu.com/ubuntu/ precise-backports restricted main
+deb http://us.archive.ubuntu.com/ubuntu/ precise-backports multiverse universe
 
 deb http://archive.canonical.com/ubuntu precise partner
