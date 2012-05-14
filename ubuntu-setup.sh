@@ -10,10 +10,7 @@
 # adduser tvaughan sudo
 # passwd -dl root
 
-# exit 0
-
-# vi /etc/hostname
-# vi /etc/hosts
+# vi /etc/hostname /etc/hosts
 # vi /etc/default/dhcpcd (maybe)
 # service hostname restart
 
