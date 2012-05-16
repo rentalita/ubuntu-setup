@@ -1,7 +1,9 @@
 include:
+{% if grains['role'] == 'development' %}
   - chromium.apt
   - dropbox.apt
   - medibuntu.apt
+{% endif %}
   - saltstack.apt
   - rentalita.apt
 
@@ -20,16 +22,20 @@ include:
     - user: root
     - group: root
     - mode: 644
+    - template: jinja
+    - countrycode: {{ grains['countrycode'] }}
 
 /etc/apt/sources.list.d:
   file:
     - directory
     - clean: True
     - require:
+{% if grains['role'] == 'development' %}
       - file: /etc/apt/sources.list.d/chromium.list
       - file: /etc/apt/sources.list.d/google-talkplugin.list
       - file: /etc/apt/sources.list.d/dropbox.list
       - file: /etc/apt/sources.list.d/medibuntu.list
+{% endif %}
       - file: /etc/apt/sources.list.d/saltstack.list
       - file: /etc/apt/sources.list.d/rentalita.list
 

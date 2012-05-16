@@ -1,7 +1,12 @@
 base:
   '*':
-    - rentalita
     - ssh
     - users
-  'beisbol':
+  'role:production':
+    - match: grain
+    - default
+    - rentalita
+  'role:development':
+    - match: grain
+    - default.dev
     - rentalita.dev
