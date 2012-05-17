@@ -2,12 +2,12 @@ base:
   '*':
     - ssh
   'role:production':
-    - match: grain
+    - match: pillar
     - users.production
     - default
     - rentalita
   'role:development':
-    - match: grain
+    - match: pillar
     - users.development
     - default.dev
     - rentalita.dev

@@ -29,6 +29,7 @@
 #   salt-key -A (danger!!!)
 #   git clone git://github.com/rentalita/ubuntu-setup.git
 #   ln -s $(pwd)/ubuntu-setup/salt /srv/salt
+#   ln -s $(pwd)/ubuntu-setup/pillar /srv/pillar
 
 sudo salt --no-color -t 6000 '*' state.highstate
 

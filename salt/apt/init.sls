@@ -1,5 +1,5 @@
 include:
-{% if grains['role'] == 'development' %}
+{% if pillar['role'] == 'development' %}
   - chromium.apt
   - dropbox.apt
   - medibuntu.apt
@@ -23,14 +23,14 @@ include:
     - group: root
     - mode: 644
     - template: jinja
-    - countrycode: {{ grains['countrycode'] }}
+    - countrycode: {{ pillar['countrycode'] }}
 
 /etc/apt/sources.list.d:
   file:
     - directory
     - clean: True
     - require:
-{% if grains['role'] == 'development' %}
+{% if pillar['role'] == 'development' %}
       - file: /etc/apt/sources.list.d/chromium.list
       - file: /etc/apt/sources.list.d/google-talkplugin.list
       - file: /etc/apt/sources.list.d/dropbox.list
