@@ -5,6 +5,7 @@ default:
   pkg:
     - latest
     - names:
+      - logrotate
       - sudo
       - realpath
       - tmux
