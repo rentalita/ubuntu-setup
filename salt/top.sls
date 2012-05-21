@@ -1,6 +1,7 @@
 base:
   '*':
     - ssh
+    - sudo
   'role:production':
     - match: pillar
     - users.production
