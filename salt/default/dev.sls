@@ -33,6 +33,7 @@ default-dev:
       - ttf-mscorefonts-installer
       - skype
       - beets
+      - ruby1.9.1
       # TODO: clojure & leiningen
     - require:
       - pkg: default
