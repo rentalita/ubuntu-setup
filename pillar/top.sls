@@ -1,5 +1,5 @@
 base:
-  'pucon':
+  'pucon.rentalita.com':
     - production
   'beisbol':
     - development
