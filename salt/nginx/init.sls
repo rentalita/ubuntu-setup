@@ -1,16 +1,18 @@
 include:
   - www
 
-spawn-fcgi:
+fcgiwrap:
   pkg:
     - latest
 
-lighttpd:
+nginx:
   pkg:
     - latest
+    - names:
+      - nginx-naxsi
     - require:
       - pkg: www-packages
-      - pkg: spawn-fcgi
+      - pkg: fcgiwrap
   service:
-    - dead
-    - enable: False
+    - running
+    - enable: True
