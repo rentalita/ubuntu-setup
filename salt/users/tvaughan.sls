@@ -1,3 +1,7 @@
+include:
+  - sudo.groups
+  - www.groups
+
 tvaughan:
   group:
     - present
@@ -15,6 +19,17 @@ tvaughan:
     - present
     - user: tvaughan
     - source: salt://users/tvaughan.id_rsa.pub
+
+groups:
+  cmd:
+    - run
+    - names:
+      - adduser tvaughan sudo
+      - adduser tvaughan www-data
+    - require:
+      - user: tvaughan
+      - group: sudo
+      - group: www-data
 
 root:
   alias:
