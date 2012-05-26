@@ -34,6 +34,8 @@ default-dev:
       - skype
       - beets
       - ruby1.9.1
+      - ruby1.9.1-dev
+      - ruby-bundler
       # TODO: clojure & leiningen
     - require:
       - pkg: default
