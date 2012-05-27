@@ -25,11 +25,11 @@ groups:
     - run
     - names:
       - adduser tvaughan sudo
-      - adduser tvaughan www-data
+      - adduser tvaughan www-site
     - require:
       - user: tvaughan
       - group: sudo
-      - group: www-data
+      - group: www-site
 
 root:
   alias:

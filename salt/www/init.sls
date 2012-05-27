@@ -5,10 +5,19 @@ include:
   file:
     - directory
     - user: root
-    - group: www-data
+    - group: www-site
     - mode: 2775
     - require:
-      - group: www-data
+      - group: www-site
+
+/srv/www/site:
+  file:
+    - directory
+    - user: root
+    - group: www-site
+    - mode: 2775
+    - require:
+      - file: /srv/www
 
 www-packages:
   pkg:
