@@ -7,5 +7,5 @@ saltstack:
     - names:
       - salt-minion
       - salt-master
-    - requires:
+    - require:
       - cmd: apt-update

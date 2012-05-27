@@ -6,5 +6,5 @@ dropbox:
     - latest
     - names:
       - nautilus-dropbox
-    - requires:
+    - require:
       - cmd: apt-update

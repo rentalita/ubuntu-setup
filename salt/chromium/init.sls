@@ -8,5 +8,5 @@ chromium:
       - chromium-browser
       - chromium-codecs-ffmpeg-extra
       - google-talkplugin
-    - requires:
+    - require:
       - cmd: apt-update

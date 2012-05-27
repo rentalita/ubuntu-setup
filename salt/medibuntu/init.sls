@@ -7,5 +7,5 @@ medibuntu:
     - names:
       - non-free-codecs
       - libdvdcss2
-    - requires:
+    - require:
       - cmd: apt-update
