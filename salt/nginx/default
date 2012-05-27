@@ -1,0 +1,16 @@
+server {
+    listen 80;
+    server_name localhost;
+
+    root /srv/www;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ /index.html;
+        include /etc/nginx/naxsi.rules;
+    }
+
+    location /RequestDenied {
+        return 418;
+    }
+}

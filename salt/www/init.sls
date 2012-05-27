@@ -1,9 +1,12 @@
 include:
   - www.groups
 
-/var/www:
+/srv/www:
   file:
     - directory
+    - user: root
+    - group: www-data
+    - mode: 2775
     - require:
       - group: www-data
 
@@ -16,3 +19,5 @@ www-packages:
       - libwww-perl
       - libjs-jquery
       - libjs-jquery-tablesorter
+    - require:
+      - file: /srv/www
