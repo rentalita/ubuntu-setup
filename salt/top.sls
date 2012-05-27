@@ -12,3 +12,9 @@ base:
     - users.development
     - default.dev
     - rentalita.dev
+  'role:experimental':
+    - match: pillar
+    - users.experimental
+    - default
+    - gitolite
+    - gitweb.nginx

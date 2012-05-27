@@ -3,3 +3,5 @@ base:
     - production
   'beisbol':
     - development
+  'stockholm':
+    - experimental
