@@ -18,16 +18,18 @@ include:
     - mode: 2775
     - require:
       - file: /srv/www
+      - group: www-site
 
 # /srv/www/htpasswd:
 #   file:
 #     - managed
 #     - source: salt://www/htpasswd
 #     - user: root
-#     - group: www-site
+#     - group: www-data
 #     - mode: 0660
 #     - require:
 #       - file: /srv/www
+#       - group: www-data
 
 www-packages:
   pkg:
