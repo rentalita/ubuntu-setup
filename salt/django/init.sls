@@ -17,6 +17,7 @@ python-django:
       - pkg: lighttpd
       - pkg: exim4
       - pkg: sqlite3
+      - pkg: jquery
       - pkg: python-flup
 
 python-django-south:
