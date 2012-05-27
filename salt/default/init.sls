@@ -8,8 +8,8 @@ default:
       - aptitude
       - htop
       - logrotate
-      - sudo
       - realpath
+      - sudo
       - tmux
     - require:
       - cmd: apt-upgrade
