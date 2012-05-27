@@ -5,18 +5,12 @@ fcgiwrap:
   pkg:
     - latest
 
-nginx:
+nginx-light:
   pkg:
     - latest
-    - names:
-      - nginx-light
     - require:
       - pkg: www-packages
       - pkg: fcgiwrap
-  service:
-    - running
-    - enable: True
-    - name: nginx
 
 /etc/nginx/nginx.conf:
   file:
@@ -26,7 +20,7 @@ nginx:
     - group: root
     - mode: 644
     - require:
-      - pkg: nginx
+      - pkg: nginx-light
 
 /etc/nginx/sites-enabled/custom.conf:
   file:
@@ -36,11 +30,20 @@ nginx:
     - group: root
     - mode: 644
     - require:
-      - pkg: nginx
+      - pkg: nginx-light
 
 /etc/nginx/sites-enabled:
   file:
     - directory
     - clean: True
     - require:
+      - pkg: nginx-light
       - file: /etc/nginx/sites-enabled/custom.conf
+
+nginx:
+  service:
+    - running
+    - enable: True
+    - watch:
+      - file: /etc/nginx/nginx.conf
+      - file: /etc/nginx/sites-enabled

@@ -7,4 +7,4 @@ nginx-dev:
     - names:
       - nginx-doc
     - require:
-      - pkg: nginx
+      - service: nginx

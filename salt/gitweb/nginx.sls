@@ -9,6 +9,6 @@ include:
     - user: root
     - group: root
     - mode: 644
-    - requires:
+    - require:
       - pkg: gitweb
-      - pkg: nginx
+      - service: nginx
