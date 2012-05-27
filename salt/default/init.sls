@@ -5,6 +5,8 @@ default:
   pkg:
     - latest
     - names:
+      - aptitude
+      - htop
       - logrotate
       - sudo
       - realpath
