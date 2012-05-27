@@ -16,6 +16,7 @@ nginx:
   service:
     - running
     - enable: True
+    - name: nginx
 
 /etc/nginx/nginx.conf:
   file:
