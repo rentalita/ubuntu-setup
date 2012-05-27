@@ -9,7 +9,7 @@ nginx:
   pkg:
     - latest
     - names:
-      - nginx-naxsi
+      - nginx-light
     - require:
       - pkg: www-packages
       - pkg: fcgiwrap
@@ -27,3 +27,20 @@ nginx:
     - mode: 644
     - require:
       - pkg: nginx
+
+/etc/nginx/sites-enabled/custom.conf:
+  file:
+    - managed
+    - source: salt://nginx/custom.conf
+    - user: root
+    - group: root
+    - mode: 644
+    - require:
+      - pkg: nginx
+
+/etc/nginx/sites-enabled:
+  file:
+    - directory
+    - clean: True
+    - require:
+      - file: /etc/nginx/sites-enabled/custom.conf
