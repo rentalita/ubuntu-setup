@@ -1,13 +1,21 @@
 include:
   - www.groups
 
+git:
+  user:
+    - present
+    - shell: /bin/bash
+    - home: /var/lib/gitolite
+    - system: True
+
 /srv/git:
   file:
     - directory
-    - user: root
+    - user: git
     - group: www-data
-    - mode: 2755
+    - mode: 2750
     - require:
+      - user: git
       - group: www-data
 
 gitolite:
