@@ -12,3 +12,11 @@ include:
     - require:
       - pkg: gitweb
       - service: nginx
+
+restart:
+  cmd:
+    - wait
+    - name: service nginx restart
+    - watch:
+      - file: /etc/gitweb.conf
+      - file: /etc/nginx/conf.d/gitweb.conf
