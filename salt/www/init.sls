@@ -39,4 +39,4 @@ www-packages:
       - libio-socket-ssl-perl
       - libwww-perl
     - require:
-      - file: /srv/www
+      - file: /srv/www/site
