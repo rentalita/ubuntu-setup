@@ -3,6 +3,7 @@ include:
   - lighttpd
   - exim4
   - sqlite3
+  - jquery
 
 python-flup:
   pkg:

@@ -3,6 +3,7 @@ include:
   - lighttpd.dev
   - exim4.dev
   - sqlite3.dev
+  - jquery.dev
   - django
 
 python-django-dev:

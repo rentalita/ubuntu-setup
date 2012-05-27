@@ -38,7 +38,5 @@ www-packages:
       - ssl-cert
       - libio-socket-ssl-perl
       - libwww-perl
-      - libjs-jquery
-      - libjs-jquery-tablesorter
     - require:
       - file: /srv/www
