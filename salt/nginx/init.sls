@@ -22,10 +22,10 @@ nginx-light:
     - require:
       - pkg: nginx-light
 
-/etc/nginx/sites-enabled/custom.conf:
+/etc/nginx/sites-enabled/custom:
   file:
     - managed
-    - source: salt://nginx/custom.conf
+    - source: salt://nginx/custom
     - user: root
     - group: root
     - mode: 644
@@ -38,7 +38,7 @@ nginx-light:
     - clean: True
     - require:
       - pkg: nginx-light
-      - file: /etc/nginx/sites-enabled/custom.conf
+      - file: /etc/nginx/sites-enabled/custom
 
 nginx:
   service:
