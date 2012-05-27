@@ -19,6 +19,16 @@ include:
     - require:
       - file: /srv/www
 
+# /srv/www/htpasswd:
+#   file:
+#     - managed
+#     - source: salt://www/htpasswd
+#     - user: root
+#     - group: www-site
+#     - mode: 0660
+#     - require:
+#       - file: /srv/www
+
 www-packages:
   pkg:
     - latest
