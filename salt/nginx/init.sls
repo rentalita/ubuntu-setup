@@ -1,16 +1,14 @@
 include:
   - www
 
-fcgiwrap:
+nginx-pkgs:
   pkg:
     - latest
-
-nginx-light:
-  pkg:
-    - latest
+    - names:
+      - fcgiwrap
+      - nginx-light
     - require:
       - pkg: www-packages
-      - pkg: fcgiwrap
 
 /etc/nginx/nginx.conf:
   file:
@@ -20,7 +18,7 @@ nginx-light:
     - group: root
     - mode: 644
     - require:
-      - pkg: nginx-light
+      - pkg: nginx-pkgs
 
 /etc/nginx/sites-enabled/custom:
   file:
@@ -32,14 +30,13 @@ nginx-light:
     - template: jinja
     - servername: {{ pillar['servername'] }}
     - require:
-      - pkg: nginx-light
+      - pkg: nginx-pkgs
 
 /etc/nginx/sites-enabled:
   file:
     - directory
     - clean: True
     - require:
-      - pkg: nginx-light
       - file: /etc/nginx/sites-enabled/custom
 
 nginx:
