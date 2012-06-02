@@ -7,4 +7,4 @@ lighttpd-dev:
     - names:
       - lighttpd-doc
     - require:
-      - pkg: lighttpd
+      - service: lighttpd

@@ -1,16 +1,16 @@
 include:
   - www
 
-spawn-fcgi:
+lighttpd-pkgs:
   pkg:
     - latest
-
-lighttpd:
-  pkg:
-    - latest
+    - names:
+      - spawn-fcgi
+      - nginx-light
     - require:
       - pkg: www-packages
-      - pkg: spawn-fcgi
+
+lighttpd:
   service:
     - dead
     - enable: False
