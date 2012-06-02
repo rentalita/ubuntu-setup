@@ -29,6 +29,8 @@ nginx-light:
     - user: root
     - group: root
     - mode: 644
+    - template: jinja
+    - servername: {{ pillar['servername'] }}
     - require:
       - pkg: nginx-light
 
@@ -46,4 +48,4 @@ nginx:
     - enable: True
     - watch:
       - file: /etc/nginx/nginx.conf
-      - file: /etc/nginx/sites-enabled
+      - file: /etc/nginx/sites-enabled/custom
