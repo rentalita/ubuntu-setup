@@ -1,9 +1,9 @@
 include:
   - python
-  - exim4
   - sqlite3
   - jquery
   - lighttpd
+  - exim4
 
 python-flup:
   pkg:
@@ -14,10 +14,10 @@ python-django:
     - latest
     - require:
       - pkg: python
-      - pkg: exim4
       - pkg: sqlite3
       - pkg: jquery
       - service: lighttpd
+      - service: exim4
       - pkg: python-flup
 
 python-django-south:

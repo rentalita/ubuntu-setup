@@ -8,4 +8,4 @@ exim4-dev:
       - exim4-doc-html
       - exim4-doc-info
     - require:
-      - pkg: exim4
+      - service: exim4

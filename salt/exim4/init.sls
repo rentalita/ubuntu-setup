@@ -1,6 +1,8 @@
-exim4-daemon-light:
+exim4-pkgs:
   pkg:
     - latest
+    - names:
+      - exim4-daemon-light
 
 /etc/exim4/update-exim4.conf.conf:
   file:
@@ -10,7 +12,7 @@ exim4-daemon-light:
     - group: root
     - mode: 644
     - require:
-      - pkg: exim4-daemon-light
+      - pkg: exim4-pkgs
 
 update-exim4.conf:
   cmd:
@@ -27,8 +29,6 @@ update-exim4.conf:
     - mode: 644
 
 exim4:
-  pkg:
-    - latest
   service:
     - running
     - enable: True
