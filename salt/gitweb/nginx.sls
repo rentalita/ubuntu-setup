@@ -2,6 +2,12 @@ include:
   - gitweb
   - nginx
 
+extend:
+  /etc/gitweb.conf:
+    file:
+      - watch_in:
+        - service: nginx
+
 /etc/nginx/conf.d/gitweb.conf:
   file:
     - managed
@@ -9,14 +15,7 @@ include:
     - user: root
     - group: root
     - mode: 644
+    - watch_in:
+      - service: nginx
     - require:
       - pkg: gitweb
-      - service: nginx
-
-restart:
-  cmd:
-    - wait
-    - name: service nginx restart
-    - watch:
-      - file: /etc/gitweb.conf
-      - file: /etc/nginx/conf.d/gitweb.conf
