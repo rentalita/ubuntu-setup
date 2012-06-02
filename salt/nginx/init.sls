@@ -23,7 +23,7 @@ nginx-pkgs:
 /etc/nginx/sites-enabled/custom:
   file:
     - managed
-    - source: salt://nginx/custom
+    - source: salt://nginx/custom.conf
     - user: root
     - group: root
     - mode: 644
