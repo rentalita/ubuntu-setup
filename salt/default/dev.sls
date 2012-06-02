@@ -35,7 +35,9 @@ default-dev:
       - beets
       - ruby1.9.1
       - ruby1.9.1-dev
+      - rake
       - ruby-bundler
+      - ruby-sinatra
       # TODO: clojure & leiningen
     - require:
       - pkg: default
