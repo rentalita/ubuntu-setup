@@ -3,9 +3,9 @@ include:
   - nginx
 
 extend:
-  /etc/gitweb.conf:
-    file:
-      - watch_in:
+  gitweb:
+    pkg:
+      - require:
         - service: nginx
 
 /etc/nginx/conf.d/gitweb.conf:
@@ -17,5 +17,3 @@ extend:
     - mode: 644
     - watch_in:
       - service: nginx
-    - require:
-      - pkg: gitweb
