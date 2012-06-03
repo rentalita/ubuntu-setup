@@ -1,7 +1,7 @@
 base:
-  'pucon.rentalita.com':
-    - production
   'beisbol':
     - development
+  'pucon.rentalita.com':
+    - production
   'stockholm':
     - experimental

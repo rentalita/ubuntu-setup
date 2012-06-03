@@ -21,7 +21,6 @@ default-dev:
       - magit
       - dconf-tools
       - gconf-editor
-      - fabric
       - qemu-kvm-spice
       - python-spice-client-gtk
       - libvirt-bin
@@ -33,11 +32,6 @@ default-dev:
       - ttf-mscorefonts-installer
       - skype
       - beets
-      - ruby1.9.1
-      - ruby1.9.1-dev
-      - rake
-      - ruby-bundler
-      - ruby-sinatra
       # TODO: clojure & leiningen
     - require:
       - pkg: default

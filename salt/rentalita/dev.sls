@@ -1,3 +1,4 @@
 include:
-  - django.dev
   - rentalita
+  - default.dev
+  - django.dev

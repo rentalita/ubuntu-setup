@@ -1,4 +1,5 @@
 include:
+  - default
   - django
 
 python-django-lutefisk:

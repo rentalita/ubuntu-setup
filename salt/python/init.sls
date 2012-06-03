@@ -6,5 +6,4 @@ python:
       - python-pip
       - python-coverage
       - python-nose
-      - pep8
       - pylint
