@@ -6,7 +6,7 @@ lighttpd-pkgs:
     - latest
     - names:
       - spawn-fcgi
-      - nginx-light
+      - lighttpd
     - require:
       - pkg: www-packages
 
