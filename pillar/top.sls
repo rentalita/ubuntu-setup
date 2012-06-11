@@ -3,5 +3,5 @@ base:
     - development
   'pucon.rentalita.com':
     - production
-  'stockholm':
+  'otbdto':
     - experimental
