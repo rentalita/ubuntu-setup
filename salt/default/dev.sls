@@ -33,6 +33,7 @@ default-dev:
       - skype
       - beets
       # TODO: clojure & leiningen
+      - openjdk-7-jdk
     - require:
       - pkg: default
       - pkg: chromium
