@@ -33,6 +33,7 @@ default-dev:
       - skype
       - beets
       - nmap
+      - figlet
       # TODO: clojure & leiningen
       - openjdk-7-jdk
     - require:
