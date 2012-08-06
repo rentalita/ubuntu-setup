@@ -1,0 +1,13 @@
+deb http://{{ countrycode }}.archive.ubuntu.com/ubuntu/ quantal main restricted
+deb http://{{ countrycode }}.archive.ubuntu.com/ubuntu/ quantal-updates main restricted
+
+deb http://{{ countrycode }}.archive.ubuntu.com/ubuntu/ quantal multiverse universe
+deb http://{{ countrycode }}.archive.ubuntu.com/ubuntu/ quantal-updates multiverse universe
+
+deb http://{{ countrycode }}.archive.ubuntu.com/ubuntu/ quantal-security main restricted
+deb http://{{ countrycode }}.archive.ubuntu.com/ubuntu/ quantal-security multiverse universe
+
+deb http://{{ countrycode }}.archive.ubuntu.com/ubuntu/ quantal-backports restricted main
+deb http://{{ countrycode }}.archive.ubuntu.com/ubuntu/ quantal-backports multiverse universe
+
+deb http://archive.canonical.com/ubuntu quantal partner

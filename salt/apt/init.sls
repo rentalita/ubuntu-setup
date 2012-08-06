@@ -7,6 +7,24 @@ include:
   - saltstack.apt
   - rentalita.apt
 
+/etc/apt/sources.list.d/quantal.list:
+  file:
+    - managed
+    - source: salt://apt/quantal.list
+    - user: root
+    - group: root
+    - mode: 644
+    - template: jinja
+    - countrycode: {{ pillar['countrycode'] }}
+
+/etc/apt/preferences.d/99local:
+  file:
+    - managed
+    - source: salt://apt/preferences.conf
+    - user: root
+    - group: root
+    - mode: 644
+
 /etc/apt/apt.conf.d/99local:
   file:
     - managed
@@ -36,6 +54,7 @@ include:
       - file: /etc/apt/sources.list.d/dropbox.list
       - file: /etc/apt/sources.list.d/medibuntu.list
 {% endif %}
+      - file: /etc/apt/sources.list.d/quantal.list
       - file: /etc/apt/sources.list.d/saltstack.list
       - file: /etc/apt/sources.list.d/rentalita.list
 
@@ -44,6 +63,7 @@ apt-update:
     - run
     - name: apt-get update
     - require:
+      - file: /etc/apt/preferences.d/99local
       - file: /etc/apt/apt.conf.d/99local
       - file: /etc/apt/sources.list
       - file: /etc/apt/sources.list.d
