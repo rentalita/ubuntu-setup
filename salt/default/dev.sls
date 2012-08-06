@@ -32,6 +32,7 @@ default-dev:
       - ttf-mscorefonts-installer
       - skype
       - beets
+      - nmap
       # TODO: clojure & leiningen
       - openjdk-7-jdk
     - require:
