@@ -5,7 +5,7 @@
 sudo salt --no-color -t 6000 '*' state.highstate
 
 sudo salt --no-color '*' cmd.run 'apt-get clean'
-sudo salt --no-color '*' cmd.run 'apt-get autoremove --purge'
+sudo salt --no-color '*' cmd.run 'apt-get autoremove --purge --assume-yes'
 
 # Local Variables:
 # indent-tabs-mode: nil
