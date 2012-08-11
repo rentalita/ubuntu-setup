@@ -16,8 +16,6 @@ default-dev:
       - emacs
       - emacs-goodies-el
       - paredit-el
-      - slime
-      - cl-swank
       - magit
       - dconf-tools
       - gconf-editor
