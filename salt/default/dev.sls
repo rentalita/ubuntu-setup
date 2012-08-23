@@ -32,6 +32,10 @@ default-dev:
       - beets
       - nmap
       - figlet
+      - xmonad
+      - xmobar
+      - libghc-xmonad-dev
+      - libghc-xmonad-contrib-dev
       # TODO: clojure & leiningen
       - openjdk-7-jdk
     - require:
