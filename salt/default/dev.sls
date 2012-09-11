@@ -28,6 +28,7 @@ default-dev:
       - xfonts-terminus
       - fonts-droid
       - ttf-mscorefonts-installer
+      - flashplugin-installer
       - skype
       - beets
       - nmap
