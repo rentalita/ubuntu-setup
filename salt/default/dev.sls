@@ -29,7 +29,7 @@ default-dev:
       - fonts-droid
       - ttf-mscorefonts-installer
       - flashplugin-installer
-      - skype
+      # TODO: - skype
       - beets
       - nmap
       - figlet
