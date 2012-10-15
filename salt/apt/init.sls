@@ -22,7 +22,7 @@ include:
 /etc/apt/preferences.d/99local:
   file:
     - managed
-    - source: salt://apt/preferences.conf
+    - source: salt://apt/apt.preferences
     - user: root
     - group: root
     - mode: 644
