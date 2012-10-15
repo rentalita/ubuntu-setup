@@ -1,0 +1,3 @@
+Package: *nginx*
+Pin: release n=quantal
+Pin-Priority: 900

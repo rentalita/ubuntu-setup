@@ -1,5 +1,6 @@
 include:
   - default
+  - emacs
   - chromium
   - dropbox
   - medibuntu
@@ -12,11 +13,6 @@ default-dev:
       - devscripts
       - fakeroot
       - debhelper
-      - exuberant-ctags
-      - emacs
-      - emacs-goodies-el
-      - paredit-el
-      - magit
       - dconf-tools
       - gconf-editor
       - qemu-kvm-spice

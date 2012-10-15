@@ -1,0 +1,11 @@
+Package: *emacs24*
+Pin: release n=quantal
+Pin-Priority: 900
+
+Package: paredit-el
+Pin: release n=quantal
+Pin-Priority: 900
+
+Package: magit
+Pin: release n=quantal
+Pin-Priority: 900

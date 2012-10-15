@@ -4,6 +4,8 @@ include:
   - dropbox.apt
   - medibuntu.apt
 {% endif %}
+  - emacs.apt
+  - nginx.apt
   - saltstack.apt
   - rentalita.apt
 
@@ -64,6 +66,8 @@ apt-update:
     - name: apt-get update
     - require:
       - file: /etc/apt/preferences.d/99local
+      - file: /etc/apt/preferences.d/99emacs
+      - file: /etc/apt/preferences.d/99nginx
       - file: /etc/apt/apt.conf.d/99local
       - file: /etc/apt/sources.list
       - file: /etc/apt/sources.list.d
