@@ -5,10 +5,17 @@ nginx-pkgs:
   pkg:
     - latest
     - names:
-      - fcgiwrap
       - nginx-light
     - require:
       - pkg: www-packages
+
+nginx-extras-pkgs:
+  pkg:
+    - latest
+    - names:
+      - fcgiwrap
+    - require:
+      - pkg: nginx-pkgs
 
 /etc/nginx/nginx.conf:
   file:
@@ -20,10 +27,10 @@ nginx-pkgs:
     - require:
       - pkg: nginx-pkgs
 
-/etc/nginx/sites-enabled/custom:
+/etc/nginx/sites-enabled/local:
   file:
     - managed
-    - source: salt://nginx/custom.conf
+    - source: salt://nginx/local.site
     - user: root
     - group: root
     - mode: 644
@@ -37,7 +44,7 @@ nginx-pkgs:
     - directory
     - clean: True
     - require:
-      - file: /etc/nginx/sites-enabled/custom
+      - file: /etc/nginx/sites-enabled/local
 
 nginx:
   service:
@@ -45,4 +52,4 @@ nginx:
     - enable: True
     - watch:
       - file: /etc/nginx/nginx.conf
-      - file: /etc/nginx/sites-enabled/custom
+      - file: /etc/nginx/sites-enabled/local
