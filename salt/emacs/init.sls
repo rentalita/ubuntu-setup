@@ -2,8 +2,15 @@ emacs-pkgs:
   pkg:
     - latest
     - names:
-      - exuberant-ctags
-      - emacs
+      - emacs24
+
+emacs-extras-pkgs:
+  pkg:
+    - latest
+    - names:
       - emacs-goodies-el
-      - paredit-el
+      - exuberant-ctags
       - magit
+      - paredit-el
+    - require:
+      - pkg: emacs-pkgs
