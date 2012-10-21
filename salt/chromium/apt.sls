@@ -11,6 +11,8 @@ chromium-apt:
     - user: root
     - group: root
     - mode: 644
+    - template: jinja
+    - codename: {{ pillar['codename'] }}
     - require:
       - cmd: chromium-apt
 
@@ -27,5 +29,7 @@ google-talkplugin-apt:
     - user: root
     - group: root
     - mode: 644
+    - template: jinja
+    - codename: {{ pillar['codename'] }}
     - require:
       - cmd: google-talkplugin-apt

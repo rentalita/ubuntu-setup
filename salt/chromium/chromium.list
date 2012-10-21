@@ -1,1 +1,1 @@
-deb http://ppa.launchpad.net/chromium-daily/stable/ubuntu precise main
+deb http://ppa.launchpad.net/chromium-daily/stable/ubuntu {{ codename }} main

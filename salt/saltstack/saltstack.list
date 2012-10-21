@@ -1,1 +1,1 @@
-deb http://ppa.launchpad.net/saltstack/salt/ubuntu precise main
+deb http://ppa.launchpad.net/saltstack/salt/ubuntu {{ codename }} main

@@ -11,5 +11,7 @@ rentalita-apt:
     - user: root
     - group: root
     - mode: 644
+    - template: jinja
+    - codename: {{ pillar['codename'] }}
     - require:
       - cmd: rentalita-apt

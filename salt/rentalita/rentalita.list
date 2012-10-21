@@ -1,1 +1,1 @@
-deb http://ppa.launchpad.net/rentalita/daily/ubuntu precise main
+deb http://ppa.launchpad.net/rentalita/daily/ubuntu {{ codename }} main

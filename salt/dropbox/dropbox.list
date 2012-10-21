@@ -1,1 +1,1 @@
-deb http://linux.dropbox.com/ubuntu precise main
+deb http://linux.dropbox.com/ubuntu {{ codename }} main

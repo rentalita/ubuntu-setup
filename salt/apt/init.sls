@@ -26,6 +26,8 @@ include:
     - user: root
     - group: root
     - mode: 644
+    - template: jinja
+    - codename: {{ pillar['codename'] }}
 
 /etc/apt/apt.conf.d/99local:
   file:
@@ -44,6 +46,7 @@ include:
     - mode: 644
     - template: jinja
     - countrycode: {{ pillar['countrycode'] }}
+    - codename: {{ pillar['codename'] }}
 
 /etc/apt/sources.list.d:
   file:
