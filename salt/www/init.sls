@@ -35,6 +35,7 @@ www-packages:
   pkg:
     - latest
     - names:
+      - logrotate
       - ssl-cert
       - libio-socket-ssl-perl
       - libwww-perl

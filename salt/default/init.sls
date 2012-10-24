@@ -7,7 +7,6 @@ default:
     - names:
       - aptitude
       - htop
-      - logrotate
       - realpath
       - sudo
       - tmux
