@@ -11,8 +11,10 @@ base:
     - match: pillar
     - sudo
     - users.rentalita
+    - server
     - rentalita
   'role:otbdto':
     - match: pillar
     - users.otbdto
+    - server
     - otbdto
