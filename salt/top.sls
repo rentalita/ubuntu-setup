@@ -7,12 +7,12 @@ base:
     - users.development
     - rentalita.dev
     - otbdto.dev
-  'role:production':
+  'role:rentalita':
     - match: pillar
     - sudo
-    - users.production
+    - users.rentalita
     - rentalita
-  'role:experimental':
+  'role:otbdto':
     - match: pillar
-    - users.experimental
+    - users.otbdto
     - otbdto

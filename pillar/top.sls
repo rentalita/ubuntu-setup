@@ -1,7 +1,7 @@
 base:
   'beisbol':
     - development
-  'pucon.rentalita.com':
-    - production
+  'prod1.rentalita.com':
+    - rentalita
   'otbdto':
-    - experimental
+    - otbdto
