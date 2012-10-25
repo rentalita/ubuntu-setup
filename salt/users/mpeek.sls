@@ -2,9 +2,10 @@ include:
   - sudo.groups
   - www.groups
 
-mpeek:
+mpeek-group:
   group:
     - present
+    - name: mpeek
     - gid: 1001
 
 mpeek:
@@ -16,7 +17,7 @@ mpeek:
     - uid: 1001
     - gid: 1001
     - require:
-      - group: mpeek
+      - group: mpeek-group
   ssh_auth:
     - present
     - user: mpeek

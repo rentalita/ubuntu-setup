@@ -2,9 +2,10 @@ include:
   - sudo.groups
   - www.groups
 
-tvaughan:
+tvaughan-group:
   group:
     - present
+    - name: tvaughan
     - gid: 1000
 
 tvaughan:
@@ -16,7 +17,7 @@ tvaughan:
     - uid: 1000
     - gid: 1000
     - require:
-      - group: tvaughan
+      - group: tvaughan-group
   ssh_auth:
     - present
     - user: tvaughan
