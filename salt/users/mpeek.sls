@@ -15,6 +15,8 @@ mpeek:
     - home: /home/mpeek
     - uid: 1001
     - gid: 1001
+    - require:
+      - group: mpeek
   ssh_auth:
     - present
     - user: mpeek
