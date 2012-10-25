@@ -23,7 +23,7 @@ tvaughan:
     - user: tvaughan
     - source: salt://users/tvaughan.id_rsa.pub
 
-groups:
+tvaughan-groups:
   cmd:
     - run
     - names:

@@ -23,7 +23,7 @@ mpeek:
     - user: mpeek
     - source: salt://users/mpeek.id_rsa.pub
 
-groups:
+mpeek-groups:
   cmd:
     - run
     - names:
