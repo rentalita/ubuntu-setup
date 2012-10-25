@@ -5,3 +5,5 @@ base:
     - rentalita
   'otbdto':
     - otbdto
+  'acataco1.flw.com'
+    - flw

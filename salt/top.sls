@@ -18,3 +18,8 @@ base:
     - users.otbdto
     - server
     - otbdto
+  'role:flw':
+    - match: pillar
+    - users.flw
+    - server
+    - flw
