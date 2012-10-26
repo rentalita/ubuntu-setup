@@ -28,11 +28,11 @@ tvaughan-groups:
     - run
     - names:
       - adduser tvaughan sudo
+      - adduser tvaughan staff
       - adduser tvaughan www-site
     - require:
       - user: tvaughan
       - group: sudo
-      - group: staff
       - group: www-site
 
 root:

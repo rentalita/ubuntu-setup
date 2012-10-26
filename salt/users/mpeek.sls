@@ -28,9 +28,9 @@ mpeek-groups:
     - run
     - names:
       - adduser mpeek sudo
+      - adduser mpeek staff
       - adduser mpeek www-site
     - require:
       - user: mpeek
       - group: sudo
-      - group: staff
       - group: www-site
