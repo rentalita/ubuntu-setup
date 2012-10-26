@@ -32,6 +32,7 @@ tvaughan-groups:
     - require:
       - user: tvaughan
       - group: sudo
+      - group: staff
       - group: www-site
 
 root:

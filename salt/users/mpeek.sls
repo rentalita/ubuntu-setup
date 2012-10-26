@@ -32,4 +32,5 @@ mpeek-groups:
     - require:
       - user: mpeek
       - group: sudo
+      - group: staff
       - group: www-site
