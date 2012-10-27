@@ -17,7 +17,7 @@ whoopsie:
   pkg:
     - purged
 
-/etc/default/apport
+/etc/default/apport:
   file:
     - managed
     - source: salt://default/apport

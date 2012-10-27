@@ -41,7 +41,7 @@ default-dev:
       - pkg: dropbox
       - pkg: medibuntu
 
-/etc/security/limits.conf
+/etc/security/limits.conf:
   file:
     - managed
     - source: salt://default/limits.conf
