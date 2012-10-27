@@ -40,3 +40,11 @@ default-dev:
       - pkg: chromium
       - pkg: dropbox
       - pkg: medibuntu
+
+/etc/security/limits.conf
+  file:
+    - managed
+    - source: salt://default/limits.conf
+    - user: root
+    - group: root
+    - mode: 644
