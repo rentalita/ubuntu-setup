@@ -1,3 +1,0 @@
-whoopsie:
-  pkg:
-    - purged

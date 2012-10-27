@@ -11,7 +11,6 @@ base:
     - match: pillar
     - sudo
     - users.rentalita
-    - server
     - rentalita
   'role:otbdto':
     - match: pillar
@@ -21,5 +20,4 @@ base:
   'role:flw':
     - match: pillar
     - users.flw
-    - server
     - flw
