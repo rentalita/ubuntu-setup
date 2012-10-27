@@ -15,7 +15,6 @@ base:
   'role:otbdto':
     - match: pillar
     - users.otbdto
-    - server
     - otbdto
   'role:flw':
     - match: pillar
