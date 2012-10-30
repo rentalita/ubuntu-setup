@@ -3,6 +3,7 @@ include:
   - chromium.apt
   - dropbox.apt
   - medibuntu.apt
+  - nodejs.apt
 {% endif %}
   - emacs.apt
   - nginx.apt
@@ -58,6 +59,7 @@ include:
       - file: /etc/apt/sources.list.d/google-talkplugin.list
       - file: /etc/apt/sources.list.d/dropbox.list
       - file: /etc/apt/sources.list.d/medibuntu.list
+      - file: /etc/apt/sources.list.d/nodejs.list
 {% endif %}
       - file: /etc/apt/sources.list.d/quantal.list
       - file: /etc/apt/sources.list.d/saltstack.list

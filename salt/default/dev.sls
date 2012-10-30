@@ -4,6 +4,7 @@ include:
   - chromium
   - dropbox
   - medibuntu
+  - nodejs
 
 default-dev:
   pkg:
@@ -40,6 +41,7 @@ default-dev:
       - pkg: chromium
       - pkg: dropbox
       - pkg: medibuntu
+      - pkg: nodejs
 
 /etc/security/limits.conf:
   file:
