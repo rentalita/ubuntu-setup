@@ -12,5 +12,6 @@ emacs-extras-pkgs:
       - exuberant-ctags
       - magit
       - paredit-el
+      - yaml-mode
     - require:
       - pkg: emacs-pkgs
