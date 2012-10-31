@@ -11,6 +11,11 @@ server {
         try_files /404.html /404/index.html;
     }
 
+    location ~* \.(?:ico|css|js|gif|jpe?g|png)$ {
+	expires 30d;
+	add_header Cache-Control public;
+    }
+
     location ~ ^/(404|css|js|font|img|en|es) {
         try_files $uri $uri/ =404;
     }
