@@ -22,6 +22,8 @@ default-dev:
       - virt-manager
       - virt-viewer
       - ecryptfs-utils
+      - redshift
+      - unclutter
       - xfonts-terminus
       - fonts-droid
       - ttf-mscorefonts-installer
