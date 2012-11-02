@@ -5,6 +5,7 @@ include:
   - dropbox
   - medibuntu
   - nodejs
+  - lightdm
 
 default-dev:
   pkg:
@@ -52,3 +53,11 @@ default-dev:
     - user: root
     - group: root
     - mode: 644
+
+/usr/local/bin/logout.sh:
+  file:
+    - managed
+    - source: salt://default/logout.sh
+    - user: root
+    - group: root
+    - mode: 755
