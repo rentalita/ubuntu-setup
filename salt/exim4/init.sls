@@ -27,6 +27,8 @@ update-exim4.conf:
     - user: root
     - group: root
     - mode: 644
+    - template: jinja
+    - domainname: {{ pillar['domainname'] }}
 
 exim4:
   service:
