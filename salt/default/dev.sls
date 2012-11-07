@@ -29,6 +29,7 @@ default-dev:
       - fonts-droid
       - ttf-mscorefonts-installer
       - flashplugin-installer
+      - telepathy-sofiasip
       # TODO: - skype
       - beets
       - nmap
