@@ -9,5 +9,6 @@ python-dev:
       - python-sphinx
       - pep8
       - fabric
+      - virtualenvwrapper
     - require:
       - pkg: python
