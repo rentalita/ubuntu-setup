@@ -1,20 +1,10 @@
-chromium-apt:
-  cmd:
-    - run
-    - name: apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 4E5E17B5
-    - unless: apt-key list | grep -q 4E5E17B5
-
-/etc/apt/sources.list.d/chromium.list:
+/etc/apt/preferences.d/99chromium:
   file:
     - managed
-    - source: salt://chromium/chromium.list
+    - source: salt://chromium/apt.preferences
     - user: root
     - group: root
     - mode: 644
-    - template: jinja
-    - codename: {{ pillar['codename'] }}
-    - require:
-      - cmd: chromium-apt
 
 google-talkplugin-apt:
   cmd:

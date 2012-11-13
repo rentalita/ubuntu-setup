@@ -55,7 +55,6 @@ include:
     - clean: True
     - require:
 {% if pillar['role'] == 'development' %}
-      - file: /etc/apt/sources.list.d/chromium.list
       - file: /etc/apt/sources.list.d/google-talkplugin.list
       - file: /etc/apt/sources.list.d/dropbox.list
       - file: /etc/apt/sources.list.d/medibuntu.list
