@@ -7,6 +7,7 @@ base:
     - users.development
     - rentalita.dev
     - otbdto.dev
+    - flw.dev
   'role:rentalita':
     - match: pillar
     - sudo
