@@ -47,7 +47,7 @@ default-dev:
       - pkg: medibuntu
       - pkg: nodejs
 
-/etc/security/limits.conf:
+/etc/security/limits.d/99-local:
   file:
     - managed
     - source: salt://default/limits.conf
