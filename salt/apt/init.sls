@@ -10,6 +10,7 @@ include:
   - saltstack.apt
   - rentalita.apt
 
+{% if pillar['codename'] != 'quantal' %}
 /etc/apt/sources.list.d/quantal.list:
   file:
     - managed
@@ -19,6 +20,7 @@ include:
     - mode: 644
     - template: jinja
     - countrycode: {{ pillar['countrycode'] }}
+{% endif %}
 
 /etc/apt/preferences.d/99local:
   file:
@@ -60,7 +62,9 @@ include:
       - file: /etc/apt/sources.list.d/medibuntu.list
       - file: /etc/apt/sources.list.d/nodejs.list
 {% endif %}
+{% if pillar['codename'] != 'quantal' %}
       - file: /etc/apt/sources.list.d/quantal.list
+{% endif %}
       - file: /etc/apt/sources.list.d/saltstack.list
       - file: /etc/apt/sources.list.d/rentalita.list
 
