@@ -1,7 +1,6 @@
 include:
 {% if pillar['role'] == 'development' %}
   - chromium.apt
-  - dropbox.apt
   - medibuntu.apt
   - nodejs.apt
 {% endif %}
@@ -58,7 +57,6 @@ include:
     - require:
 {% if pillar['role'] == 'development' %}
       - file: /etc/apt/sources.list.d/google-talkplugin.list
-      - file: /etc/apt/sources.list.d/dropbox.list
       - file: /etc/apt/sources.list.d/medibuntu.list
       - file: /etc/apt/sources.list.d/nodejs.list
 {% endif %}

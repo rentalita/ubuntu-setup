@@ -2,7 +2,6 @@ include:
   - default
   - emacs
   - chromium
-  - dropbox
   - medibuntu
   - nodejs
   - lightdm
@@ -30,6 +29,7 @@ default-dev:
       - ttf-mscorefonts-installer
       - flashplugin-installer
       - telepathy-sofiasip
+      - nautilus-dropbox
       # TODO: - skype
       - beets
       - nmap
@@ -43,7 +43,6 @@ default-dev:
     - require:
       - pkg: default
       - pkg: chromium
-      - pkg: dropbox
       - pkg: medibuntu
       - pkg: nodejs
 
