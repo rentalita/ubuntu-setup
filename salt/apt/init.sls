@@ -3,6 +3,7 @@ include:
   - chromium.apt
   - medibuntu.apt
   - nodejs.apt
+  - heroku.apt
 {% endif %}
   - emacs.apt
   - nginx.apt
@@ -59,6 +60,7 @@ include:
       - file: /etc/apt/sources.list.d/google-talkplugin.list
       - file: /etc/apt/sources.list.d/medibuntu.list
       - file: /etc/apt/sources.list.d/nodejs.list
+      - file: /etc/apt/sources.list.d/heroku.list
 {% endif %}
 {% if pillar['codename'] != 'quantal' %}
       - file: /etc/apt/sources.list.d/quantal.list

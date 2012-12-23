@@ -4,6 +4,7 @@ include:
   - chromium
   - medibuntu
   - nodejs
+  - heroku
   - lightdm
 
 default-dev:
@@ -45,6 +46,7 @@ default-dev:
       - pkg: chromium
       - pkg: medibuntu
       - pkg: nodejs
+      - pkg: heroku
 
 /etc/security/limits.d/99-local:
   file:
