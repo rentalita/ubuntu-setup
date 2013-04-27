@@ -6,8 +6,10 @@ default:
     - latest
     - names:
       - aptitude
+      - byobu
       - htop
       - realpath
+      - screen
       - sudo
       - tmux
     - require:
