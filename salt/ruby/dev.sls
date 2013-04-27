@@ -6,6 +6,7 @@ ruby-dev:
     - latest
     - names:
       # - ruby1.9.1-doc
+      - bundler
       - rake
     - require:
       - pkg: ruby
