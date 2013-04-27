@@ -29,7 +29,8 @@ default-dev:
       - fonts-droid
       - ttf-mscorefonts-installer
       - flashplugin-installer
-      - telepathy-sofiasip
+      - telepathy-rakia
+      - account-plugin-sip
       - nautilus-dropbox
       # TODO: - skype
       - beets
