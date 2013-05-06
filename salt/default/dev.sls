@@ -33,7 +33,6 @@ default-dev:
       - account-plugin-sip
       - nautilus-dropbox
       # TODO: - skype
-      - beets
       - nmap
       - figlet
       - xmonad
